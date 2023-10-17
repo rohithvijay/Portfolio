@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import Progress from "./Progress";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faDownload } from "@fortawesome/free-solid-svg-icons";
-import cycloidesExp from "../assets/Cycloides.pdf";
-import reflectionsExp from "../assets/Quest-Global.pdf";
-import QuestExp from "../assets/Reflections.pdf";
+// import cycloidesExp from "../assets/Cycloides.pdf";
+// import reflectionsExp from "../assets/Quest-Global.pdf";
+// import QuestExp from "../assets/Reflections.pdf";
 
 const Skills = () => {
   const location = useLocation();
@@ -66,12 +66,12 @@ const Skills = () => {
             </div>
             <button
               class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = QuestExp;
-                link.download = "Quest-Global-Experience.pdf";
-                link.click();
-              }}
+              // onClick={() => {
+              //   const link = document.createElement("a");
+              //   link.href = QuestExp;
+              //   link.download = "Quest-Global-Experience.pdf";
+              //   link.click();
+              // }}
             >
               <FontAwesomeIcon icon={faDownload} />
               <span className="pl-2">Download Certificate</span>
@@ -127,12 +127,12 @@ const Skills = () => {
 
             <button
               class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = reflectionsExp;
-                link.download = "Reflections-experience.pdf";
-                link.click();
-              }}
+              // onClick={() => {
+              //   const link = document.createElement("a");
+              //   link.href = reflectionsExp;
+              //   link.download = "Reflections-experience.pdf";
+              //   link.click();
+              // }}
             >
               <FontAwesomeIcon icon={faDownload} />
               <span className="pl-2">Download Certificate</span>
@@ -204,12 +204,12 @@ const Skills = () => {
             </p>
             <button
               class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = cycloidesExp;
-                link.download = "Cycloides-Experience.pdf";
-                link.click();
-              }}
+              // onClick={() => {
+              //   const link = document.createElement("a");
+              //   link.href = cycloidesExp;
+              //   link.download = "Cycloides-Experience.pdf";
+              //   link.click();
+              // }}
             >
               <FontAwesomeIcon icon={faDownload} />
               <span className="pl-2">Download Certificate</span>

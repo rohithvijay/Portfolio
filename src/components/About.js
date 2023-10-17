@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div class="py-20 lg:px-10 xl:px-56 grid grid-cols-1 md:grid-cols-3 gap-10" data-aos={"fade-up"} data-aos-once="true">
           <div className=" m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center bg-theme">
-            <FontAwesomeIcon icon={faCode} />
+            <FontAwesomeIcon icon={faCode}/>
             <h3 className="text-sm mt-5">Web Design</h3>
           </div>
           <div className=" m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme">

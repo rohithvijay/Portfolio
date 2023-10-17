@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import resumePDF from "../assets/FrontEndDeveloper.pdf";
+// import resumePDF from "../assets/FrontEndDeveloper.pdf";
 import { Link } from "react-router-dom";
 
 const BannerSlider = () => {
@@ -28,12 +28,12 @@ const BannerSlider = () => {
           <h1 className="text-4xl font-semibold text-gray-800">I'M ROHITH</h1>
           <button
             class="inline-flex items-center px-3 py-2 mt-12 mx-auto w-fit text-sm font-medium border  focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700 focus:ring-gray-700"
-            onClick={() => {
-              const link = document.createElement("a");
-              link.href = resumePDF;
-              link.download = "Rohith-Resume.pdf";
-              link.click();
-            }}
+            // onClick={() => {
+            //   const link = document.createElement("a");
+            //   link.href = resumePDF;
+            //   link.download = "Rohith-Resume.pdf";
+            //   link.click();
+            // }}
           >
             <FontAwesomeIcon icon={faDownload} />
             <span className="pl-2">Download Resume</span>

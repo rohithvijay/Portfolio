@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: "Poppins";
@@ -81,6 +86,7 @@ code {
 .bg-img {
   background-image: url(assets/home-bg1.jpg);
   background-size: cover;
+  background-position: top;
 }
 .bg-theme {
   background-color: #A3C0BC;
@@ -94,8 +100,3 @@ code {
 .slick-dots {
   bottom: 60px !important;
 }
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

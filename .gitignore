@@ -3,12 +3,13 @@
 /node_modules
 /.pnp
 .pnp.js
+.parcel-cache
+.cache
 
 # testing
 /coverage
+/Quest-Global.pdf
 
-# production
-/build
 
 # misc
 .DS_Store
