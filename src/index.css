@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Poppins";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.custom-body {
+  width: calc(100% - 300px);
+  left:300px;
+}
+
+.custom-left {
+  left: -3.3rem;
+}
+.brand-hover:hover {
+  color:#ffffff !important;
+}
+
+/*  Responsive sidebar */
+@media (max-width: 800px) {
+  .toggle .w-custom-width{
+    left: 0!important;
+    transition: all 0.5s ease-in-out;
+    width: 73% !important;
+  }
+  .sidebar .w-custom-width {
+    left: -100% !important;
+    transition: all 0.5s ease-in-out;
+    width: 73% !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0 !important; 
+    z-index: 100 !important;
+    
+  }
+  .custom-body {
+    width: 100%;
+    left: 0;
+  }
+  .close-menu,
+  .open-menu {
+    display: block !important;
+  }
+  .toggle .close-menu,.sidebar .open-menu  {
+    display: block !important;
+  }
+  .toggle .open-menu, .sidebar .close-menu {
+    display: none !important;
+  }
+}
+.close-menu,
+.open-menu {
+  position: fixed;
+  cursor: pointer;
+  display: none;
+  z-index:1;
+}
+
+.open-menu {
+  top: 50px;
+  left: 40px;
+  font-size: 35px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  font-size: 35px;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle .custom-body {
+  background-color: rgba(0,0,0,0.4);
+  overflow:hidden;
+}
+.bg-img {
+  background-image: url(assets/home-bg1.jpg);
+  background-size: cover;
+}
+.bg-theme {
+  background-color: #A3C0BC;
+}
+#Home .flex{
+  display: flex!important;
+}
+.slick-prev, .slick-next {
+  display:none !important;
+}
+.slick-dots {
+  bottom: 60px !important;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
