@@ -100,3 +100,32 @@ code {
 .slick-dots {
   bottom: 60px !important;
 }
+.tech .bg-theme{
+  background: linear-gradient(to right, #445061 50%, #A3C0BC 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.tech .bg-theme:hover {
+  background-position: left bottom;
+}
+.tech .leading-tight {
+  visibility:hidden;
+  position:Absolute;
+  left:0;
+  text-align:Center;
+  transition: .5 sec ease-in;
+}
+.tech .bg-theme:hover .leading-tight{
+  visibility: visible;
+  transition: .5 sec ease-in;
+  top: 0;
+  display: flex;
+  align-items: CENTER;
+  justify-content: CENTER;
+  width: 100%;
+  height: 100%;
+  color:#ffffff;
+  font-weight:normal;
+
+}

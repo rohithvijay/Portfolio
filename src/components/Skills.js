@@ -30,18 +30,18 @@ const Skills = () => {
         Work Experience & Skills
       </h2>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 xs:grid-cols-1 gap-7 mt-7">
-        <ol class="relative border-l  border-gray-700 mb-6">
-          <li class="mb-10 ml-10" data-aos="zoom-in" data-aos-once="true">
-            <span class="absolute flex items-center justify-center w-6 h-6   rounded-full custom-left ring-8  ring-gray-900 bg-white text-black text-sm">
+        <ol className="relative border-l  border-gray-700 mb-6">
+          <li className="mb-10 ml-10" data-aos="zoom-in" data-aos-once="true">
+            <span className="absolute flex items-center justify-center w-6 h-6   rounded-full custom-left ring-8  ring-gray-900 bg-white text-black text-sm">
               <FontAwesomeIcon icon={faPencil} />
             </span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold  text-black">
+            <h3 className="flex items-center mb-1 text-lg font-semibold  text-black">
               Senior Software Engineer
             </h3>
-            <time class="block pt-1 pb-3  text-sm font-normal leading-none  text-gray-500">
+            <time className="block pt-1 pb-3  text-sm font-normal leading-none  text-gray-500">
               MAR 2022 - AUG 2023
             </time>
-            <div class="font-normal text-gray-500 text-sm">
+            <div className="font-normal text-gray-500 text-sm">
               <h3 className="font-semibold text-gray-600">
                 Canon Medical - Role as a Senior Software Engineer. (2021-2022)
               </h3>
@@ -65,7 +65,7 @@ const Skills = () => {
               </p>
             </div>
             <button
-              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
+              className="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = QuestExp;
@@ -78,21 +78,21 @@ const Skills = () => {
             </button>
           </li>
           <li
-            class="mb-10 ml-10"
+            className="mb-10 ml-10"
             data-aos="zoom-out"
             data-aos-delay="700"
             data-aos-once="true"
           >
-            <span class="absolute flex items-center justify-center w-6 h-6 rounded-full custom-left ring-8 ring-gray-900 bg-white text-black text-sm">
+            <span className="absolute flex items-center justify-center w-6 h-6 rounded-full custom-left ring-8 ring-gray-900 bg-white text-black text-sm">
               <FontAwesomeIcon icon={faPencil} />
             </span>
-            <h3 class="mb-1 text-lg font-semibold text-black">
+            <h3 className="mb-1 text-lg font-semibold text-black">
               Reflections Info Systems
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
               SEP 2019 - MAR 2022
             </time>
-            <p class="font-normal text-gray-500 text-sm">
+            <div className="font-normal text-gray-500 text-sm">
               <ul>
                 <li className="my-3">
                   <h3 className="font-semibold text-gray-600">
@@ -123,10 +123,10 @@ const Skills = () => {
                   </p>
                 </li>
               </ul>
-            </p>
+            </div>
 
             <button
-              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
+              className="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = reflectionsExp;
@@ -145,16 +145,16 @@ const Skills = () => {
             data-aos-delay="1300"
             data-aos-once="true"
           >
-            <span class="absolute flex items-center justify-center w-6 h-6 rounded-full custom-left ring-8 ring-gray-900 bg-white text-black text-sm">
+            <span className="absolute flex items-center justify-center w-6 h-6 rounded-full custom-left ring-8 ring-gray-900 bg-white text-black text-sm">
               <FontAwesomeIcon icon={faPencil} />
             </span>
-            <h3 class="mb-1 text-lg font-semibold text-black">
+            <h3 className="mb-1 text-lg font-semibold text-black">
               Cycloides Technologies
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
               JUL 2017 - SEP 2019
             </time>
-            <p class="font-normal text-gray-500 text-sm">
+            <div className="font-normal text-gray-500 text-sm">
               <ul>
                 <li className="my-3">
                   <h3 className="font-semibold text-gray-600">
@@ -201,9 +201,9 @@ const Skills = () => {
                   </p>
                 </li>
               </ul>
-            </p>
+            </div>
             <button
-              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
+              className="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = cycloidesExp;

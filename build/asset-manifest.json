@@ -1,21 +1,25 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.0f43b849.css",
-    "main.js": "/Portfolio/static/js/main.b6817a54.js",
+    "main.js": "/Portfolio/static/js/main.1e18b7c5.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/home-bg1.jpg": "/Portfolio/static/media/home-bg1.add7587deba7de90b647.jpg",
+    "static/media/FrontEndDeveloper.pdf": "/Portfolio/static/media/FrontEndDeveloper.37965eb1a48013ef4377.pdf",
+    "static/media/Cycloides.pdf": "/Portfolio/static/media/Cycloides.1d8abb000270351aeea0.pdf",
     "static/media/profile-dp.jpg": "/Portfolio/static/media/profile-dp.f00fd4f99f591b9ef1f1.jpg",
+    "static/media/Quest-Global.pdf": "/Portfolio/static/media/Quest-Global.b26965c493312a60468d.pdf",
+    "static/media/Reflections.pdf": "/Portfolio/static/media/Reflections.868c2720df8c9b65a14d.pdf",
     "static/media/slick.svg": "/Portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Portfolio/index.html",
     "main.0f43b849.css.map": "/Portfolio/static/css/main.0f43b849.css.map",
-    "main.b6817a54.js.map": "/Portfolio/static/js/main.b6817a54.js.map",
+    "main.1e18b7c5.js.map": "/Portfolio/static/js/main.1e18b7c5.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f43b849.css",
-    "static/js/main.b6817a54.js"
+    "static/js/main.1e18b7c5.js"
   ]
 }
