@@ -91,7 +91,7 @@ const Contact = () => {
               <FontAwesomeIcon icon={faGithub} />
             </Link>
           </div>
-          <div className="text-gray-600 pl-2 font-normal text-center cursor-pointer">
+          <div className="text-gray-600 text-sm sm:text-md pl-2 font-normal text-center cursor-pointer">
             CopyRight &copy; {copyRightYear} . All Rights Reserved
           </div>
 

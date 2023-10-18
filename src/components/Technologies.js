@@ -65,57 +65,57 @@ const Technologies = () => {
         </h2>
 
         <div
-          className="py-20 px-5 xl:px-40 grid grid-cols-1 md:px-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center text-center tech"
+          className="py-20 px-5 xl:px-40 grid grid-cols-2 md:px-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center text-center tech"
           data-aos={"fade-up"}
           data-aos-once="true"
         >
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faHtml5} />
-            <h2 className="text-xl font-normal text-white leading-tight">HTML 5</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">HTML 5</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faCss3} />
-            <h2 className="text-xl font-normal text-white leading-tight">CSS 3</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">CSS 3</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2  relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2  relative">
             <FontAwesomeIcon icon={faBootstrap} />
-            <h2 className="text-xl font-normal text-white leading-tight">BOOTSTRAP</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">BOOTSTRAP</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faAngular} />
-            <h2 className="text-xl font-normal text-white leading-tight">ANGULAR</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">ANGULAR</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faReact} />
-            <h2 className="text-xl font-normal text-white leading-tight">REACT</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">REACT</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faVuejs} />
-            <h2 className="text-xl font-normal text-white leading-tight">VUE</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">VUE</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faGithub} />
-            <h2 className="text-xl font-normal text-white leading-tight">GITHUB</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">GITHUB</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faJira} />
-            <h2 className="text-xl font-normal text-white leading-tight">JIRA</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">JIRA</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faGit} />
-            <h2 className="text-xl font-normal text-white leading-tight">GIT</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">GIT</h2>
           </div>
 
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faInvision} />
-            <h2 className="text-xl font-normal text-white leading-tight">INVISION</h2>
+            <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">INVISION</h2>
           </div>
         </div>
       </div>
       <div className="py-20 theme-color2">
-        <div className="px-5 xl:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="px-5 xl:px-40 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center">
-            <h3 className="text-5xl font-bold mt-5" id="coffee">
+            <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="coffee">
               {count1}
             </h3>
             <h3 className="text-lg mt-5">
@@ -124,19 +124,19 @@ const Technologies = () => {
             </h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
-            <h3 className="text-5xl font-bold mt-5" id="projects">
+            <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="projects">
               {count2}
             </h3>
             <h3 className="text-lg mt-5">PROJECTS</h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
-            <h3 className="text-5xl font-bold mt-5" id="clients">
+            <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="clients">
               {count3}
             </h3>
             <h3 className="text-lg mt-5">CLIENTS</h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
-            <h3 className="text-5xl font-bold  mt-5" id="years">
+            <h3 className="text-3xl sm:text-5xl font-bold  mt-5" id="years">
               {count4}
             </h3>
             <h3 className="text-lg mt-5">YEARS</h3>
