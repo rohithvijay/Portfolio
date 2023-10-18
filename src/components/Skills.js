@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <div
       id="Experience&Skills"
-      className="min-h-screen flex-col text-left p-10 overflow-hidden"
+      className="min-h-screen flex-col text-left p-10 overflow-hidden theme-color2"
     >
       <div className="text-gray-700 mt-8 mb-5">Experience</div>
       <h2
@@ -80,7 +80,6 @@ const Skills = () => {
           <li
             className="mb-10 ml-10"
             data-aos="zoom-out"
-            data-aos-delay="700"
             data-aos-once="true"
           >
             <span className="absolute flex items-center justify-center w-6 h-6 rounded-full custom-left ring-8 ring-gray-900 bg-white text-black text-sm">
@@ -142,7 +141,6 @@ const Skills = () => {
             className="ml-10"
             data-aos="zoom-in"
             data-aos-offset={"-15"}
-            data-aos-delay="1300"
             data-aos-once="true"
           >
             <span className="absolute flex items-center justify-center w-6 h-6 rounded-full custom-left ring-8 ring-gray-900 bg-white text-black text-sm">
@@ -229,9 +227,9 @@ const Skills = () => {
             <Progress name={"TypeScript"} percent={80} />
             <Progress name={"React"} percent={70} />
             <Progress name={"SQL"} percent={65} />
+            <Progress name={"AWS"} percent={60} />
             <Progress name={"Ionic"} percent={50} />
             <Progress name={"C#"} percent={50} />
-            <Progress name={"AWS"} percent={40} />
             <Progress name={"Vue"} percent={30} />
           </div>
         </div>

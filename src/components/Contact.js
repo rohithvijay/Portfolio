@@ -20,7 +20,10 @@ const Contact = () => {
     }
   }, [location]);
   return (
-    <div className="min-h-screen flex-col text-left p-10" id="Contact">
+    <div
+      id="Contact"
+      className="min-h-screen flex-col text-left p-10"
+    >
       <div className="text-gray-700 mt-8 mb-5">CONTACT</div>
       <h2
         className="text-xl font-bold leading-tight"
@@ -35,8 +38,8 @@ const Contact = () => {
           data-aos={"slide-right"}
           data-aos-once="true"
         >
-          <div className="flex items-center mb-7">
-            <div className=" m-h-64 p-3 text-2xl text-gray-500">
+          <div className="flex items-center mb-7 text-gray-500 hover:text-gray-700">
+            <div className=" m-h-64 p-3 text-2xl ">
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
             <Link
@@ -46,8 +49,8 @@ const Contact = () => {
               rohithvijaypersonal@gmail.com
             </Link>
           </div>
-          <div className="flex items-center mb-7">
-            <div className=" m-h-64 p-3 text-2xl  text-gray-500">
+          <div className="flex items-center mb-7 text-gray-500 hover:text-gray-700">
+            <div className=" m-h-64 p-3 text-2xl">
               <FontAwesomeIcon icon={faAddressCard} />
             </div>
             <span className="text-gray-600 pl-2 font-normal hover:font-semibold cursor-pointer">
@@ -55,8 +58,8 @@ const Contact = () => {
               <br /> Waterloo, Ontario
             </span>
           </div>
-          <div className="flex items-center mb-7">
-            <div className=" m-h-64 p-3 text-2xl  text-gray-500">
+          <div className="flex items-center mb-7 text-gray-500 hover:text-gray-700">
+            <div className=" m-h-64 p-3 text-2xl">
               <FontAwesomeIcon icon={faPhone} />
             </div>
             <Link
@@ -67,7 +70,11 @@ const Contact = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col justify-center" data-aos={"fade-up"} data-aos-once="true">
+        <div
+          className="flex flex-col justify-center"
+          data-aos={"fade-up"}
+          data-aos-once="true"
+        >
           <div className="flex justify-center">
             <Link
               to="https://linkedin.com/in/rohith-vijay"
@@ -84,7 +91,9 @@ const Contact = () => {
               <FontAwesomeIcon icon={faGithub} />
             </Link>
           </div>
-          <div className="text-gray-600 pl-2 font-normal text-center cursor-pointer">CopyRight &copy; {copyRightYear} . All Rights Reserved</div>
+          <div className="text-gray-600 pl-2 font-normal text-center cursor-pointer">
+            CopyRight &copy; {copyRightYear} . All Rights Reserved
+          </div>
 
           {/* <div>
             <input

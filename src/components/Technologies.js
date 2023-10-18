@@ -46,16 +46,16 @@ const Technologies = () => {
     counter("projects", 100, 55, 3000);
     counter("clients", 0, 30, 3000);
     counter("years", 0, 6, 3000);
-    if (location.pathname === "/Projects") {
-      const element = document.getElementById("Projects");
+    if (location.pathname === "/Technologies") {
+      const element = document.getElementById("Technologies");
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
 
   return (
-    <div className="min-h-screen flex-col text-left " id="Projects">
+    <div id="Technologies" className="min-h-screen flex-col text-left">
       <div className="p-10">
-        <div className="text-gray-700 mt-8 mb-5">PROJECTS</div>
+        <div className="text-gray-700 mt-8 mb-5">TECHNOLOGIES</div>
         <h2
           className="text-xl font-bold"
           data-aos={"slide-right"}
@@ -69,52 +69,52 @@ const Technologies = () => {
           data-aos={"fade-up"}
           data-aos-once="true"
         >
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faHtml5} />
-            <h2 className="text-xl font-bold leading-tight">HTML 5</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">HTML 5</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faCss3} />
-            <h2 className="text-xl font-bold leading-tight">CSS 3</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">CSS 3</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faBootstrap} />
-            <h2 className="text-xl font-bold leading-tight">BOOTSTRAP</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">BOOTSTRAP</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faAngular} />
-            <h2 className="text-xl font-bold leading-tight">ANGULAR</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">ANGULAR</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faReact} />
-            <h2 className="text-xl font-bold leading-tight">REACT</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">REACT</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faVuejs} />
-            <h2 className="text-xl font-bold leading-tight">VUE</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">VUE</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faGithub} />
-            <h2 className="text-xl font-bold leading-tight">GITHUB</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">GITHUB</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faJira} />
-            <h2 className="text-xl font-bold leading-tight">JIRA</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">JIRA</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faGit} />
-            <h2 className="text-xl font-bold leading-tight">GIT</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">GIT</h2>
           </div>
 
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center bg-theme cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
             <FontAwesomeIcon icon={faInvision} />
-            <h2 className="text-xl font-bold leading-tight">INVISION</h2>
+            <h2 className="text-xl font-normal text-white leading-tight">INVISION</h2>
           </div>
         </div>
       </div>
-      <div className="py-20 bg-theme">
+      <div className="py-20 theme-color2">
         <div className="px-5 xl:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="bg-gray-100 m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center">
+          <div className="bg-white m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center">
             <h3 className="text-5xl font-bold mt-5" id="coffee">
               {count1}
             </h3>
@@ -123,19 +123,19 @@ const Technologies = () => {
               COFFEE
             </h3>
           </div>
-          <div className="bg-gray-100 m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
+          <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-5xl font-bold mt-5" id="projects">
               {count2}
             </h3>
             <h3 className="text-lg mt-5">PROJECTS</h3>
           </div>
-          <div className="bg-gray-100 m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
+          <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-5xl font-bold mt-5" id="clients">
               {count3}
             </h3>
             <h3 className="text-lg mt-5">CLIENTS</h3>
           </div>
-          <div className="bg-gray-100 m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
+          <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-5xl font-bold  mt-5" id="years">
               {count4}
             </h3>

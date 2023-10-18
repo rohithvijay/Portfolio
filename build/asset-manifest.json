@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5704bfea.css",
+    "main.css": "/Portfolio/static/css/main.06642a06.css",
     "main.js": "/Portfolio/static/js/main.98128e2e.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/home-bg1.jpg": "/Portfolio/static/media/home-bg1.add7587deba7de90b647.jpg",
     "static/media/FrontEndDeveloper.pdf": "/Portfolio/static/media/FrontEndDeveloper.37965eb1a48013ef4377.pdf",
+    "static/media/home-bg1.jpg": "/Portfolio/static/media/home-bg1.301a3095ba1a7993ff5a.jpg",
     "static/media/Cycloides.pdf": "/Portfolio/static/media/Cycloides.1d8abb000270351aeea0.pdf",
     "static/media/profile-dp.jpg": "/Portfolio/static/media/profile-dp.f00fd4f99f591b9ef1f1.jpg",
     "static/media/Quest-Global.pdf": "/Portfolio/static/media/Quest-Global.b26965c493312a60468d.pdf",
     "static/media/Reflections.pdf": "/Portfolio/static/media/Reflections.868c2720df8c9b65a14d.pdf",
     "static/media/idea.png": "/Portfolio/static/media/idea.2a60e2be6995841ad2ac.png",
     "index.html": "/Portfolio/index.html",
-    "main.5704bfea.css.map": "/Portfolio/static/css/main.5704bfea.css.map",
+    "main.06642a06.css.map": "/Portfolio/static/css/main.06642a06.css.map",
     "main.98128e2e.js.map": "/Portfolio/static/js/main.98128e2e.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5704bfea.css",
+    "static/css/main.06642a06.css",
     "static/js/main.98128e2e.js"
   ]
 }
