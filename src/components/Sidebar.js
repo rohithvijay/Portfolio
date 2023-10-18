@@ -7,13 +7,13 @@ import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 const SidebarComponent = () => {
   const [selectedLink, setSelectedLink] = useState(
-    sessionStorage.getItem("selectedLink") || null
+    sessionStorage.getItem("selectedLink") || "home"
   );
   const [className, setClassName] = useState("");
 
   useEffect(() => {
-    sessionStorage.setItem("selectedLink", selectedLink);
     setClassName("sidebar");
+    sessionStorage.setItem("selectedLink", selectedLink);
     const handleScroll = () => {
       setClassName("sidebar");
     };
