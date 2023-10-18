@@ -46,7 +46,7 @@ const SidebarComponent = () => {
       <div>
         <div className="bg-gray-800 text-white w-custom-width space-y-6 py-7 px-0 fixed inset-y-0 left-0 transform transition duration-200 ease-in-out z-30 text-center">
           <div className="flex space-x-2 justify-center">
-            <div className="relative w-44 h-44 rounded-full border-double border-gray-100 shadow-sm overflow-hidden" data-aos="fade-down">
+            <div className="relative  w-20 h-20 sm:w-44 sm:h-44 rounded-full border-double border-gray-100 shadow-sm overflow-hidden" data-aos="fade-down">
               <img className="h-full" src={profile} alt="userimage" />
             </div>
           </div>
@@ -128,16 +128,13 @@ const SidebarComponent = () => {
               Contact
             </Link>
           </nav>
-          <div className="flex justify-center">
+          <div className="flex justify-center absolute bottom-8 w-full">
             <Link
               to="https://linkedin.com/in/rohith-vijay"
               target="_blank"
               className="block py-2.5 px-4  text-gray-700 brand-hover"
               onClick={() => setSelectedLink("LinkedIn")}
-              style={{ color: selectedLink === "LinkedIn" ? "white" : "grey" }}
-              data-aos="fade-up"
-              data-aos-delay="1200"
-              data-aos-once="true"
+              style={{ color: selectedLink === "LinkedIn" ? "white" : "grey" }}             
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </Link>
@@ -146,10 +143,7 @@ const SidebarComponent = () => {
               target="_blank"
               className="block py-2.5 px-4  text-gray-700 brand-hover"
               onClick={() => setSelectedLink("gitHub")}
-              style={{ color: selectedLink === "gitHub" ? "white" : "grey" }}
-              data-aos="fade-up"
-              data-aos-delay="1200"
-              data-aos-once="true"
+              style={{ color: selectedLink === "gitHub" ? "white" : "grey" }}            
             >
               <FontAwesomeIcon icon={faGithub} />
             </Link>
@@ -158,10 +152,7 @@ const SidebarComponent = () => {
               target="_blank"
               className="block py-2.5 px-4  text-gray-700 brand-hover"
               onClick={() => setSelectedLink("skype")}
-              style={{ color: selectedLink === "skype" ? "white" : "grey" }}
-              data-aos="fade-up"
-              data-aos-delay="1200"
-              data-aos-once="true"
+              style={{ color: selectedLink === "skype" ? "white" : "grey" }}            
             >
               <FontAwesomeIcon icon={faSkype} />
             </Link>
