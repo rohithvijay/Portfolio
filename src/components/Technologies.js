@@ -77,7 +77,7 @@ const Technologies = () => {
             <FontAwesomeIcon icon={faCss3} />
             <h2 className="text-xl font-normal text-white leading-tight">CSS 3</h2>
           </div>
-          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative">
+          <div className="m-h-64 p-6 text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2  relative">
             <FontAwesomeIcon icon={faBootstrap} />
             <h2 className="text-xl font-normal text-white leading-tight">BOOTSTRAP</h2>
           </div>

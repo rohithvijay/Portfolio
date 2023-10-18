@@ -1,7 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn, faGithub, faSkype } from "@fortawesome/free-brands-svg-icons";
 import profile from "../assets/profile-dp.jpg";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
@@ -132,7 +132,7 @@ const SidebarComponent = () => {
             <Link
               to="https://linkedin.com/in/rohith-vijay"
               target="_blank"
-              className="block py-2.5 px-4 transition duration-200 text-gray-700 brand-hover"
+              className="block py-2.5 px-4  text-gray-700 brand-hover"
               onClick={() => setSelectedLink("LinkedIn")}
               style={{ color: selectedLink === "LinkedIn" ? "white" : "grey" }}
               data-aos="fade-up"
@@ -144,7 +144,7 @@ const SidebarComponent = () => {
             <Link
               to="https://github.com/rohithvijay"
               target="_blank"
-              className="block py-2.5 px-4 transition duration-200 text-gray-700 brand-hover"
+              className="block py-2.5 px-4  text-gray-700 brand-hover"
               onClick={() => setSelectedLink("gitHub")}
               style={{ color: selectedLink === "gitHub" ? "white" : "grey" }}
               data-aos="fade-up"
@@ -152,6 +152,18 @@ const SidebarComponent = () => {
               data-aos-once="true"
             >
               <FontAwesomeIcon icon={faGithub} />
+            </Link>
+            <Link
+              to="skype:live: cid.6fe79738405830cb?chat"
+              target="_blank"
+              className="block py-2.5 px-4  text-gray-700 brand-hover"
+              onClick={() => setSelectedLink("skype")}
+              style={{ color: selectedLink === "skype" ? "white" : "grey" }}
+              data-aos="fade-up"
+              data-aos-delay="1200"
+              data-aos-once="true"
+            >
+              <FontAwesomeIcon icon={faSkype} />
             </Link>
           </div>
         </div>
