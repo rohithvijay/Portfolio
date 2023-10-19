@@ -18,9 +18,12 @@ const Home = () => {
     <div
       id="Home"
       className="h-screen p-10 bg-img"
+      data-aos="fade-right"
+      data-aos-once="true"
+      data-aos-delay="200"
     >
-      <div className="text-black-800 flex items-start sm:items-center pt-14 sm:mt-0 h-screen md:px-14">
-        <div className="intro">
+      <div className="text-black-800 flex items-start sm:items-center sm:mt-0 h-screen md:px-14">
+        <div className="intro pt-14">
           {/* <h1
             className="text-5xl font-semibold text-gray-800 mb-10"
             data-aos="fade-up"
