@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div id="About" className="min-h-screen overflow-x-hidden p-10">
       <section className="about" data-section="about">
-        <div className="flex-col mt-14 flex flex-auto">
+        <div className="flex-col mt-2 sm:mt-14 flex flex-auto">
           <div className="text-gray-700 mt-8 mb-5">ABOUT</div>
           <h2
             className="text-xl font-bold leading-tight"

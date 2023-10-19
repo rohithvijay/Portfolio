@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn, faGithub, faSkype } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faAddressCard,
@@ -89,6 +89,13 @@ const Contact = () => {
               className="block py-2.5 px-4 transition duration-200 text-gray-400 hover:text-gray-800 text-3xl"
             >
               <FontAwesomeIcon icon={faGithub} />
+            </Link>
+            <Link
+              to="skype:live: cid.6fe79738405830cb?chat"
+              target="_blank"
+              className="block py-2.5 px-4 transition duration-200 text-gray-400 hover:text-gray-800 text-3xl"          
+            >
+              <FontAwesomeIcon icon={faSkype} />
             </Link>
           </div>
           <div className="text-gray-600 text-sm sm:text-md pl-2 font-normal text-center cursor-pointer">
