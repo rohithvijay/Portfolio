@@ -62,8 +62,8 @@ const About = () => {
             data-aos={"fade-left"}
             data-aos-once="true"
           >
-            I am happy to know you that <br />
-            <b>50+</b> projects done sucessfully!
+            I am happy to announce the completion of <br />
+            <b>50+</b> projects. 
           </h4>
         </div>
       </section>
