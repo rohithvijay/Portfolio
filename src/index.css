@@ -178,3 +178,9 @@ code {
   width: 100%;
   height: 100%;
 }
+.pos-color{
+  color: #6A99B1;
+}
+.userimage {
+  transform: scale(1.3) rotate(0deg);
+}
