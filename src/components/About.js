@@ -14,10 +14,8 @@ const About = () => {
   }, [location]);
 
   return (
-    <div id="About" className="min-h-screen overflow-x-hidden p-10">
-      <section className="about" data-section="about">
-        <div className="flex-col mt-2 sm:mt-14 flex flex-auto">
-          <div className="text-gray-700 mt-8 mb-5">ABOUT</div>
+    <div id="About" className="overflow-x-hidden p-10">
+          <h4 className="text-gray-700 mb-5">ABOUT</h4>
           <h2
             className="text-xl font-bold leading-tight"
             data-aos={"slide-right"}
@@ -37,9 +35,8 @@ const About = () => {
             JavaScript frameworks like React and Angular. <br />I love exploring
             new technologies and building something that didn’t exist before.
           </p>
-        </div>
         <div
-          className="py-20 lg:px-10 xl:px-56 grid grid-cols-1 md:grid-cols-3 gap-10"
+          className="py-5 sm:py-20 lg:px-10 xl:px-56 grid grid-cols-1 md:grid-cols-3 gap-10"
           data-aos={"fade-up"}
           data-aos-once="true"
         >
@@ -56,7 +53,7 @@ const About = () => {
             <h3 className="text-sm mt-5">Application</h3>
           </div>
         </div>
-        <div className="flex-col mt-14 flex flex-auto text-grey-800 p-14 theme-color2">
+        <div className="flex-col mt-5 sm:mt-14 flex flex-auto text-grey-800 sm:p-14 p-5 theme-color2">
           <h4
             className="md:text-2xl font-medium "
             data-aos={"fade-left"}
@@ -66,7 +63,6 @@ const About = () => {
             <b>50+</b> projects. 
           </h4>
         </div>
-      </section>
     </div>
   );
 };

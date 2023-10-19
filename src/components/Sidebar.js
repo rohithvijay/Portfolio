@@ -46,14 +46,14 @@ const SidebarComponent = () => {
       <div>
         <div className="bg-gray-800 text-white w-custom-width py-7 px-0 fixed inset-y-0 left-0 transform transition duration-200 ease-in-out z-30 text-center">
           <div className="flex space-x-2 justify-center mb-5">
-            <div className="relative  w-20 h-20 sm:w-44 sm:h-44 rounded-full border-double border-gray-100 shadow-sm overflow-hidden" data-aos="fade-down">
+            <div className="relative  w-20 h-20 sm:w-44 sm:h-44 rounded-full border-double border-gray-100 shadow-sm overflow-hidden img-sub" data-aos="fade-down">
               <img className="h-full userimage" src={profile} alt="userimage" />
             </div>
           </div>
-          <h2 className="text-2xl font-extrabold" data-aos="fade-down">
+          <h2 className="text-2xl font-extrabold img-sub" data-aos="fade-down">
             ROHITH VIJAY
           </h2>
-          <h4 className="text-md font-bold pt-1 mb-10 pos-color" data-aos="fade-down">
+          <h4 className="text-md font-bold pt-1 mb-10 pos-color img-sub" data-aos="fade-down">
             FRONT END DEVELOPER
           </h4>
           <nav>
@@ -128,7 +128,7 @@ const SidebarComponent = () => {
               Contact
             </Link>
           </nav>
-          <div className="flex justify-center absolute bottom-8 w-full">
+          <div className="flex justify-center absolute bottom-8 w-full img-sub">
             <Link
               to="https://linkedin.com/in/rohith-vijay"
               target="_blank"

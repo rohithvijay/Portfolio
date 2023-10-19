@@ -11,7 +11,7 @@ import {
   faGit,
   faBootstrap,
   faInvision,
-  faVuejs,
+  faVuejs
 } from "@fortawesome/free-brands-svg-icons";
 
 const Technologies = () => {
@@ -53,9 +53,8 @@ const Technologies = () => {
   }, [location]);
 
   return (
-    <div id="Technologies" className="min-h-screen flex-col text-left">
-      <div className="p-10">
-        <div className="text-gray-700 mt-8 mb-5">TECHNOLOGIES</div>
+    <div id="Technologies" className="flex-col p-10 text-left ">
+        <h4 className="text-gray-700 mb-5">TECHNOLOGIES</h4>
         <h2
           className="text-xl font-bold"
           data-aos={"slide-right"}
@@ -65,7 +64,7 @@ const Technologies = () => {
         </h2>
 
         <div
-          className="py-20 px-5 xl:px-40 grid grid-cols-2 md:px-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center text-center tech"
+          className="py-5 sm:py-20 px-5 xl:px-40 grid grid-cols-2 md:px-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center text-center tech"
           data-aos={"fade-up"}
           data-aos-once="true"
         >
@@ -111,8 +110,7 @@ const Technologies = () => {
             <h2 className="text-sm sm:text-xl font-normal text-white leading-tight">INVISION</h2>
           </div>
         </div>
-      </div>
-      <div className="py-20 theme-color2">
+      <div className="py-5 sm:py-20 theme-color2">
         <div className="px-5 xl:px-40 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center">
             <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="coffee">

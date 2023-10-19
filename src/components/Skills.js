@@ -19,9 +19,9 @@ const Skills = () => {
   return (
     <div
       id="Experience&Skills"
-      className="min-h-screen flex-col text-left p-10 overflow-hidden theme-color2"
+      className="flex-col text-left p-10 overflow-hidden theme-color2"
     >
-      <div className="text-gray-700 mt-8 mb-5">Experience</div>
+      <h4 className="text-gray-700 mb-5">Experience</h4>
       <h2
         className="text-xl font-bold leading-tight mb-10"
         data-aos={"slide-right"}

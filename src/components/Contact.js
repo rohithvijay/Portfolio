@@ -22,9 +22,9 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="min-h-screen flex-col text-left p-10"
+      className="flex-col text-left p-10 theme-color2"
     >
-      <div className="text-gray-700 mt-8 mb-5">CONTACT</div>
+      <h4 className="text-gray-700 mb-5">CONTACT</h4>
       <h2
         className="text-xl font-bold leading-tight"
         data-aos={"slide-right"}
@@ -32,7 +32,7 @@ const Contact = () => {
       >
         GET IN TOUCH
       </h2>
-      <div className="text-left mt-5 md:mt-24 grid gap-8 grid-cols-1 lg:grid-cols-2 py-16 pr-0 md:pr-20   text-gray-900">
+      <div className="text-left grid gap-8 grid-cols-1 lg:grid-cols-2 py-5 sm:py-16 pr-0 md:pr-20   text-gray-900">
         <div
           className="flex flex-col justify-center"
           data-aos={"slide-right"}

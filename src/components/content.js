@@ -11,10 +11,12 @@ const Content = () => {
       <SidebarComponent />
       <div className="bg-gray-100 custom-body absolute h-full">
         <Home />
-        <About />
-        <Skills />
-        <Technologies />
-        <Contact />
+        <div className="inner-content">
+          <About />
+          <Skills />
+          <Technologies />
+          <Contact />
+        </div>
       </div>
     </div>
   );
