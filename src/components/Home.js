@@ -22,7 +22,7 @@ const Home = () => {
       data-aos-once="true"
       data-aos-delay="200"
     >
-      <div className="text-black-800 flex items-start sm:items-center p-10 pt-14 sm:mt-0 h-screen md:px-14">
+      <div className="text-black-800 flex items-start sm:items-center p-10 pt-14 sm:mt-0 h-full md:px-14">
         <div className="intro">
           {/* <h1
             className="text-5xl font-semibold text-gray-800 mb-10"
