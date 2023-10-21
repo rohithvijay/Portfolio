@@ -43,25 +43,26 @@ const Skills = () => {
             </time>
             <div className="font-normal text-gray-500 text-sm">
               <h3 className="font-semibold text-gray-600">
-                Canon Medical - Role as a Senior Software Engineer. (2021-2022)
+                Canon Medical - Role as a Senior Software Engineer. (2022-2023)
               </h3>
               <p>
                 Developing and maintaining web applications using Angular
-                framework to support various healthcare-related processes and
-                systems. Designing and Implementation of responsive layouts,
-                forms, and interactive components using Angular, HTML, CSS and
-                Bootstrap. Worked closely with healthcare professionals and
-                stakeholders to understand their requirements and translate them
-                into functional features. This involves implementing complex
-                business logic and workflows within the Angular application.
-                Implementation and Integration of REST APIs into the application
-                using RXJS library in Angular. Implementation of Angular
-                features like life cycle hooks, interaction between components,
-                custom directives/pipes across different components in the
-                project. Implementation of SSE event in server side with the
-                help of C# to identify live events on the website. Followed
-                responsive design principles across different devices like PC,
-                laptop, mobile phones etc. using media queries.
+                framework to support various processes and systems. Designing
+                and Implementation of responsive layouts, forms, and interactive
+                components using Angular, HTML5, SCSS and Bootstrap 5. Worked
+                closely with professionals and stakeholders to understand their
+                requirements and translate them into functional features. This
+                involves implementing complex business logic and workflows
+                within the Angular application. Implementation and Integration
+                of REST APIs into the application using RXJS library in Angular.
+                Implementation of SSE event in server side with the help of C#
+                to identify live events on the website. Clear and comprehensive
+                documentation of design decisions and diagrams to understand the
+                overall structure and design principles. Ensured overall product
+                quality throughout the entire software development life cycle.
+                Mentored Junior developers and trainees about clean code
+                principles, code organization, and writing scalable Angular
+                applications.
               </p>
             </div>
             <button
@@ -77,11 +78,7 @@ const Skills = () => {
               <span className="pl-2">Download Certificate</span>
             </button>
           </li>
-          <li
-            className="mb-10 ml-10"
-            data-aos="zoom-out"
-            data-aos-once="true"
-          >
+          <li className="mb-10 ml-10" data-aos="zoom-out" data-aos-once="true">
             <span className="absolute flex items-center justify-center w-6 h-6 rounded-full custom-left ring-8 ring-gray-900 bg-white text-black text-sm">
               <FontAwesomeIcon icon={faPencil} />
             </span>
@@ -100,9 +97,9 @@ const Skills = () => {
                   <p>
                     Collaborated with internal teams and vendors to fix and
                     improve products and services. Implementation of responsive
-                    layouts and interactive components using React, HTML, CSS
+                    layouts, forms, and interactive components using React, JSX
                     and Bootstrap. Implementation and Integration of REST APIs
-                    into the application using RXJS and react hooks.
+                    into the application using RXJS library in React.
                     Identification and fixing bugs, as well as optimizing
                     performance.
                   </p>
@@ -115,10 +112,11 @@ const Skills = () => {
                     Designing and developing robust solutions to meet client
                     requirements for functionality, scalability and performance.
                     Worked with back-end programmers to implement REST API using
-                    Angular. Wrote understandable HTML, SCSS and typescript code
-                    using JavaScript frameworks like Angular to build responsive
-                    web-based applications. Followed Agile development
-                    methodology to ensure product quality.
+                    Angular. Wrote understandable HTML, SCSS and Angular to
+                    build responsive web-based applications. Followed Agile
+                    development methodology to ensure product quality. Regular
+                    meetings and communication with team members to keep the
+                    track of the tasks in the projects.
                   </p>
                 </li>
               </ul>
@@ -172,7 +170,7 @@ const Skills = () => {
                   <p>
                     Translated design teams UX wireframes and mockups into
                     responsive, interactive features using HTML, CSS and
-                    JavaScript. Integration of REST API’s using Angular.
+                    Angular. Integration of REST API’s using Angular.
                   </p>
                 </li>
                 <li className="my-3">
@@ -191,8 +189,8 @@ const Skills = () => {
                     Onedles - Role as an Angular JS Developer. (2017-2018)
                   </h3>
                   <p>
-                    Web development using HTML, CSS, Angular 1 and PHP for
-                    building and developing UI components. Involved in building
+                    Web development using HTML, CSS, and AngularJS for building
+                    and developing UI components. Involved in building
                     responsive web designs and fixing browser compatibility
                     issues. Identification, fixing and tracking the bugs in the
                     Redmine tool.

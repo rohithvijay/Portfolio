@@ -32,7 +32,7 @@ const Contact = () => {
       >
         GET IN TOUCH
       </h2>
-      <div className="text-left grid gap-8 grid-cols-1 lg:grid-cols-2 py-5 sm:py-16 pr-0 md:pr-20   text-gray-900">
+      <div className="text-left grid gap-8 grid-cols-1 lg:grid-cols-2 py-5 pr-0 md:pr-20   text-gray-900">
         <div
           className="flex flex-col justify-center"
           data-aos={"slide-right"}

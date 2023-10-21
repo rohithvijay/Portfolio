@@ -43,7 +43,7 @@ const Technologies = () => {
       setCount4(id);
     }
     counter("coffee", 0, 1610, 50);
-    counter("projects", 100, 55, 3000);
+    counter("projects", 0, 55, 3000);
     counter("clients", 0, 30, 3000);
     counter("years", 0, 6, 3000);
     if (location.pathname === "/Technologies") {
@@ -116,7 +116,7 @@ const Technologies = () => {
             <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="coffee">
               {count1}
             </h3>
-            <h3 className="text-lg mt-5">
+            <h3 className="text-sm sm:text-lg mt-5">
               CUPS OF <br />
               COFFEE
             </h3>
@@ -125,19 +125,19 @@ const Technologies = () => {
             <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="projects">
               {count2}
             </h3>
-            <h3 className="text-lg mt-5">PROJECTS</h3>
+            <h3 className="text-sm sm:text-lg mt-5">PROJECTS</h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="clients">
               {count3}
             </h3>
-            <h3 className="text-lg mt-5">CLIENTS</h3>
+            <h3 className="text-sm sm:text-lg mt-5">CLIENTS</h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-3xl sm:text-5xl font-bold  mt-5" id="years">
               {count4}
             </h3>
-            <h3 className="text-lg mt-5">YEARS</h3>
+            <h3 className="text-sm sm:text-lg mt-5">YEARS</h3>
           </div>
         </div>
       </div>
