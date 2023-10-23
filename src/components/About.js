@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faDesktop, faMobile } from "@fortawesome/free-solid-svg-icons";
+import data from "../data/myData";
 
 const About = () => {
   const location = useLocation();
@@ -15,54 +15,46 @@ const About = () => {
 
   return (
     <div id="About" className="overflow-x-hidden p-10">
-          <h4 className="text-gray-700 mb-5">ABOUT</h4>
-          <h2
-            className="text-xl font-bold leading-tight"
-            data-aos={"slide-right"}
-            data-aos-once="true"
+      <h4 className="text-gray-700 mb-5">{data.aboutTitle}</h4>
+      <h2
+        className="text-xl font-bold leading-tight"
+        data-aos={"slide-right"}
+        data-aos-once="true"
+      >
+        {data.aboutSubTitle}
+      </h2>
+      <p
+        className="pt-5 leading-7 text-slate-900 text-justify"
+        data-aos={"zoom-in"}
+        data-aos-once="true"
+      >
+        {data.about.description}
+      </p>
+      <div
+        className="py-5 sm:py-20 lg:px-10 xl:px-56 grid grid-cols-1 md:grid-cols-3 gap-10"
+        data-aos={"fade-up"}
+        data-aos-once="true"
+      >
+        {data.about.platforms.map((platform, index) => (
+          <div
+            key={index}
+            className="m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center theme-color2"
           >
-            WHO AM I ?
-          </h2>
-          <p
-            className="pt-5 leading-7 text-slate-900 text-justify"
-            data-aos={"zoom-in"}
-            data-aos-once="true"
-          >
-            Creative Front End Software Developer with 6 years of experience
-            having a strong background in developing robust, secure, and
-            user-friendly web and mobile applications in various verticals such
-            as e-Commerce, Health care and Banking and Financial services using
-            JavaScript frameworks like React and Angular. <br />I love exploring
-            new technologies and building something that didn’t exist before.
-          </p>
-        <div
-          className="py-5 sm:py-20 lg:px-10 xl:px-56 grid grid-cols-1 md:grid-cols-3 gap-10"
-          data-aos={"fade-up"}
+            <FontAwesomeIcon icon={platform.icon} />
+            <h3 className="text-sm mt-5">{platform.title}</h3>
+          </div>
+        ))}
+      </div>
+      <div className="flex-col mt-5 sm:mt-14 flex flex-auto text-grey-800 sm:p-14 p-5 theme-color2">
+        <h4
+          className="md:text-2xl font-medium "
+          data-aos={"fade-left"}
           data-aos-once="true"
         >
-          <div className=" m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center theme-color2">
-            <FontAwesomeIcon icon={faCode} />
-            <h3 className="text-sm mt-5">Web Design</h3>
-          </div>
-          <div className=" m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2">
-            <FontAwesomeIcon icon={faDesktop} />
-            <h3 className="text-sm mt-5">Software</h3>
-          </div>
-          <div className=" m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2">
-            <FontAwesomeIcon icon={faMobile} />
-            <h3 className="text-sm mt-5">Application</h3>
-          </div>
-        </div>
-        <div className="flex-col mt-5 sm:mt-14 flex flex-auto text-grey-800 sm:p-14 p-5 theme-color2">
-          <h4
-            className="md:text-2xl font-medium "
-            data-aos={"fade-left"}
-            data-aos-once="true"
-          >
-            I am proud to say the completion of <br />
-            <b>50+</b> projects. 
-          </h4>
-        </div>
+          I am proud to say the completion of <br />
+          <b>{data.about.projectCount}</b> projects.
+        </h4>
+      </div>
     </div>
   );
 };

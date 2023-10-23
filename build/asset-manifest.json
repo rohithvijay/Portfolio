@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6da9fc6c.css",
-    "main.js": "/Portfolio/static/js/main.f73c45e0.js",
+    "main.css": "/Portfolio/static/css/main.90bd7862.css",
+    "main.js": "/Portfolio/static/js/main.f8e435a9.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/FrontEndDeveloper.pdf": "/Portfolio/static/media/FrontEndDeveloper.37965eb1a48013ef4377.pdf",
     "static/media/Home-bg.png": "/Portfolio/static/media/Home-bg.f6ee55df797eee7d3b34.png",
@@ -10,12 +10,12 @@
     "static/media/Quest-Global.pdf": "/Portfolio/static/media/Quest-Global.b26965c493312a60468d.pdf",
     "static/media/Reflections.pdf": "/Portfolio/static/media/Reflections.868c2720df8c9b65a14d.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.6da9fc6c.css.map": "/Portfolio/static/css/main.6da9fc6c.css.map",
-    "main.f73c45e0.js.map": "/Portfolio/static/js/main.f73c45e0.js.map",
+    "main.90bd7862.css.map": "/Portfolio/static/css/main.90bd7862.css.map",
+    "main.f8e435a9.js.map": "/Portfolio/static/js/main.f8e435a9.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6da9fc6c.css",
-    "static/js/main.f73c45e0.js"
+    "static/css/main.90bd7862.css",
+    "static/js/main.f8e435a9.js"
   ]
 }

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import resumePDF from "../assets/FrontEndDeveloper.pdf";
+import data from "../data/myData";
 
 const Home = () => {
   const location = useLocation();
@@ -46,7 +47,7 @@ const Home = () => {
             data-aos-once="true"
             data-aos-delay="800"
           >
-            It's ROHITH VIJAY
+            It's {data.name}
           </h3>
           {/* <h3
             className="text-3xl text-gray-800"

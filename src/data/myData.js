@@ -10,10 +10,51 @@ import {
   faInvision,
   faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCode, faDesktop, faMobile } from "@fortawesome/free-solid-svg-icons";
 
-export default {
+const data = {
   name: "ROHITH VIJAY",
   title: "FRONT END DEVELOPER",
+  contents: [
+    {
+      title: "Home",
+    },
+    {
+      title: "About",
+    },
+    {
+      title: "Experience & Skills",
+    },
+    {
+      title: "Technologies",
+    },
+    {
+      title: "Contact",
+    },
+  ],
+  aboutTitle: "ABOUT",
+  aboutSubTitle: "WHO AM I ?",
+  about: {
+    description:
+      "Creative Front End Software Developer with 6 years of experience having a strong background in developing robust, secure, and user-friendly web and mobile applications in various verticals such as e-Commerce, Health care and Banking and Financial services using JavaScript frameworks like React and Angular. I love exploring new technologies and building something that didn’t exist before.",
+    platforms: [
+      {
+        title: "Web Design",
+        icon: faCode,
+      },
+      {
+        title: "Software",
+        icon: faDesktop,
+      },
+      {
+        title: "Application",
+        icon: faMobile,
+      },
+    ],
+    projectCount: "50+",
+  },
+  experienceTitle: "Experience",
+  experienceSubTitle: "Work Experience & Skills",
   experience: [
     {
       title: "Quest Global",
@@ -23,7 +64,7 @@ export default {
       project: [
         {
           projecttitle:
-            "Canon Medical - Role as a Senior Software Engineer. (2022-2023)",
+            "Canon Medical - Role as a Senior Software Engineer. (2022 - 2023)",
           projectDescription:
             "Developing and maintaining web applications using Angular framework to support various processes and systems. Designing and Implementation of responsive layouts, forms, and interactive components using Angular, HTML5, SCSS and Bootstrap 5. Worked closely with professionals and stakeholders to understand their requirements and translate them into functional features. This involves implementing complex business logic and workflows within the Angular application. Implementation and Integration of REST APIs into the application using RXJS library in Angular. Implementation of SSE event in server side with the help of C# to identify live events on the website. Clear and comprehensive documentation of design decisions and diagrams to understand the overall structure and design principles. Ensured overall product quality throughout the entire software development life cycle. Mentored Junior developers and trainees about clean code principles, code organization, and writing scalable Angular applications.",
         },
@@ -36,12 +77,13 @@ export default {
       enddate: "MAR 2022",
       project: [
         {
-          projecttitle: "PASS ML - Role as a Senior UI Developer. (2021-2022)",
+          projecttitle:
+            "PASS ML - Role as a Senior UI Developer. (2021 - 2022)",
           projectDescription:
             "Collaborated with internal teams and vendors to fix and improve products and services. Implementation of responsive layouts, forms, and interactive components using React, JSX and Bootstrap. Implementation and Integration of REST APIs into the application using RXJS library in React. Identification and fixing bugs, as well as optimizing performance.",
         },
         {
-          projecttitle: "SVAST - Role as an UI Developer. (2019-2021)",
+          projecttitle: "SVAST - Role as an UI Developer. (2019 - 2021)",
           projectDescription:
             "Designing and developing robust solutions to meet client requirements for functionality, scalability and performance. Worked with back-end programmers to implement REST API using Angular. Wrote understandable HTML, SCSS and Angular to build responsive web-based applications. Followed Agile development methodology to ensure product quality. Regular meetings and communication with team members to keep the track of the tasks in the projects.",
         },
@@ -60,25 +102,69 @@ export default {
         },
         {
           projecttitle:
-            "My Recycle Buddy - Role as an Angular Developer. (2018-2019)",
+            "My Recycle Buddy - Role as an Angular Developer. (2018 - 2019)",
           projectDescription:
             "Translated design teams UX wireframes and mockups into responsive, interactive features using HTML, CSS and Angular. Integration of REST API’s using Angular.",
         },
         {
           projecttitle:
-            "Commissionaires - Role as an Ionic Developer. (2018-2019)",
+            "Commissionaires - Role as an Ionic Developer. (2018 - 2019)",
           projectDescription:
             "Developed UI design and API integrations for mobile applications using technology like ionic framework which used ionic libraries and JavaScript framework like angular 2.",
         },
         {
           projecttitle:
-            "Onedles - Role as an Angular JS Developer. (2017-2018)",
+            "Onedles - Role as an Angular JS Developer. (2017 - 2018)",
           projectDescription:
             "Web development using HTML, CSS, and AngularJS for building and developing UI components. Involved in building responsive web designs and fixing browser compatibility issues. Identification, fixing and tracking the bugs in the Redmine tool.",
         },
       ],
     },
   ],
+  skills: [
+    {
+      title: "HTML/CSS",
+      percent: 90,
+    },
+    {
+      title: "JavaScript",
+      percent: 80,
+    },
+    {
+      title: "Angular",
+      percent: 80,
+    },
+    {
+      title: "TypeScript",
+      percent: 80,
+    },
+    {
+      title: "React",
+      percent: 70,
+    },
+    {
+      title: "SQL",
+      percent: 65,
+    },
+    {
+      title: "AWS",
+      percent: 60,
+    },
+    {
+      title: "Ionic",
+      percent: 50,
+    },
+    {
+      title: "C#",
+      percent: 50,
+    },
+    {
+      title: "Vue",
+      percent: 30,
+    },
+  ],
+  technologiesTitle: "TECHNOLOGIES",
+  technologiesSubtTitle: "Hands-on Technologies",
   technologies: [
     {
       title: "HTML 5",
@@ -121,4 +207,9 @@ export default {
       icon: faInvision,
     },
   ],
+  contactTitle: "CONTACT",
+  contactSubtTitle: "GET IN TOUCH",
+  contact: {},
 };
+
+export default data;
