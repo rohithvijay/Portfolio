@@ -4,7 +4,7 @@ import Progress from "./Progress";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faDownload } from "@fortawesome/free-solid-svg-icons";
 import cycloidesExp from "../assets/Cycloides.pdf";
-import reflectionsExp from "../assets/Quest-Global.pdf";
+import reflectionsExp from "../assets/QuestGlobal.pdf";
 import QuestExp from "../assets/Reflections.pdf";
 import data from "../data/myData";
 
