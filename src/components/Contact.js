@@ -74,6 +74,31 @@ const Contact = () => {
           <div className="text-gray-600 text-sm sm:text-md pl-2 font-normal text-center cursor-pointer">
               CopyRight &copy; {copyRightYear} . All Rights Reserved
             </div>  
+          {/* <div>
+            <input
+              className="w-full border-b-2 border-gray-200 text-gray-800 focus:border-gray-800  mt-2 p-3 focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Name"
+            />
+          </div>
+          <div className="mt-8">
+            <input
+              className="w-full border-b-2 border-gray-200 text-gray-800  focus:border-gray-800 mt-2 p-3  focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Email"
+            />
+          </div>
+          <div className="mt-8">
+            <textarea
+              className="w-full h-32 border-b-2 border-gray-200 text-gray-800 focus:border-gray-800 mt-2 p-3  focus:outline-none focus:shadow-outline"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div className="mt-8 text-left">
+            <button className="inline-flex px-3 py-2 mx-auto w-fit text-sm font-medium border  focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700">
+              <span className="pl-2">Send Message</span>
+            </button>
+          </div> */}
         </div>
       </div>
     </div>
