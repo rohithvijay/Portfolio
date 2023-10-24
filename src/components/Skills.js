@@ -22,13 +22,13 @@ const Skills = () => {
       id="Experience&Skills"
       className="flex-col text-left p-10 overflow-hidden theme-color2"
     >
-      <h4 className="text-gray-700 mb-5">Experience</h4>
+      <h4 className="text-gray-700 mb-5">{data.experienceTitle}</h4>
       <h2
         className="text-xl font-bold leading-tight mb-10"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        Work Experience & Skills
+        {data.experienceSubTitle}
       </h2>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 xs:grid-cols-1 gap-7 mt-7">
         <ol className="relative border-l  border-gray-700 mb-6">
@@ -63,15 +63,21 @@ const Skills = () => {
                 onClick={(event) => {
                   console.log(event);
                   const link = document.createElement("a");
-                  if (index === 0) {
-                    link.href = QuestExp;
-                    link.download = exp.title + ".pdf";
-                  } else if (index === 1) {
-                    link.href = reflectionsExp;
-                    link.download = exp.title + ".pdf";
-                  } else {
-                    link.href = cycloidesExp;
-                    link.download = exp.title + ".pdf";
+                  switch (index) {
+                    case 0:
+                      link.href = QuestExp;
+                      link.download = exp.title + ".pdf";
+                      break;
+                    case 1:
+                      link.href = reflectionsExp;
+                      link.download = exp.title + ".pdf";
+                      break;
+                    case 2:
+                      link.href = cycloidesExp;
+                      link.download = exp.title + ".pdf";
+                      break;
+                    default:
+                      break;
                   }
                   link.click();
                 }}

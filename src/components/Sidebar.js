@@ -1,12 +1,8 @@
 import { HashLink as Link } from "react-router-hash-link";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedinIn,
-  faGithub,
-  faSkype,
-} from "@fortawesome/free-brands-svg-icons";
 import profile from "../assets/profile-dp.jpg";
+import SocialLinks from "./SocialLinks";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import data from "../data/myData";
 
@@ -88,35 +84,7 @@ const SidebarComponent = () => {
               </Link>
             ))}
           </nav>
-          <div className="flex justify-center absolute bottom-8 w-full img-sub">
-            <Link
-              to="https://linkedin.com/in/rohith-vijay"
-              target="_blank"
-              className="block py-2.5 px-4  text-gray-700 brand-hover"
-              onClick={() => setSelectedLink("LinkedIn")}
-              style={{ color: selectedLink === "LinkedIn" ? "white" : "grey" }}
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </Link>
-            <Link
-              to="https://github.com/rohithvijay"
-              target="_blank"
-              className="block py-2.5 px-4  text-gray-700 brand-hover"
-              onClick={() => setSelectedLink("gitHub")}
-              style={{ color: selectedLink === "gitHub" ? "white" : "grey" }}
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </Link>
-            <Link
-              to="skype:live: cid.6fe79738405830cb?chat"
-              target="_blank"
-              className="block py-2.5 px-4  text-gray-700 brand-hover"
-              onClick={() => setSelectedLink("skype")}
-              style={{ color: selectedLink === "skype" ? "white" : "grey" }}
-            >
-              <FontAwesomeIcon icon={faSkype} />
-            </Link>
-          </div>
+          <SocialLinks />
         </div>
       </div>
     </div>

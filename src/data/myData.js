@@ -9,12 +9,23 @@ import {
   faBootstrap,
   faInvision,
   faVuejs,
+  faLinkedinIn,
+  faSkype,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCode, faDesktop, faMobile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faDesktop,
+  faMobile,
+  faEnvelope,
+  faAddressCard,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const data = {
   name: "ROHITH VIJAY",
   title: "FRONT END DEVELOPER",
+  greetings: "Hey There",
+  self: "It's",
   contents: [
     {
       title: "Home",
@@ -32,11 +43,25 @@ const data = {
       title: "Contact",
     },
   ],
+  socialLinks: [
+    {
+      link: "https://linkedin.com/in/rohith-vijay",
+      icon: faLinkedinIn,
+    },
+    {
+      link: "https://github.com/rohithvijay",
+      icon: faGithub,
+    },
+    {
+      link: "skype:live: cid.6fe79738405830cb?chat",
+      icon: faSkype,
+    },
+  ],
   aboutTitle: "ABOUT",
   aboutSubTitle: "WHO AM I ?",
   about: {
     description:
-      "Creative Front End Software Developer with 6 years of experience having a strong background in developing robust, secure, and user-friendly web and mobile applications in various verticals such as e-Commerce, Health care and Banking and Financial services using JavaScript frameworks like React and Angular. I love exploring new technologies and building something that didn’t exist before.",
+      "Creative Front End Software Developer with 6 years of experience having a strong background in developing robust, secure, and user-friendly web and mobile applications in various verticals such as e-Commerce, Health care and Banking and Financial services using JavaScript frameworks like React and Angular.\nI love exploring new technologies and building something that didn’t exist before.",
     platforms: [
       {
         title: "Web Design",
@@ -66,7 +91,7 @@ const data = {
           projecttitle:
             "Canon Medical - Role as a Senior Software Engineer. (2022 - 2023)",
           projectDescription:
-            "Developing and maintaining web applications using Angular framework to support various processes and systems. Designing and Implementation of responsive layouts, forms, and interactive components using Angular, HTML5, SCSS and Bootstrap 5. Worked closely with professionals and stakeholders to understand their requirements and translate them into functional features. This involves implementing complex business logic and workflows within the Angular application. Implementation and Integration of REST APIs into the application using RXJS library in Angular. Implementation of SSE event in server side with the help of C# to identify live events on the website. Clear and comprehensive documentation of design decisions and diagrams to understand the overall structure and design principles. Ensured overall product quality throughout the entire software development life cycle. Mentored Junior developers and trainees about clean code principles, code organization, and writing scalable Angular applications.",
+            "Designing and Implementation of responsive layouts, forms, and interactive components using Angular, HTML5, SCSS and Bootstrap 5. Optimized website performance through code splitting, lazy loading, and front-end build tool configurations with Webpack. Collaborated with the back-end development team to integrate front-end components with RESTful APIs using RXJS library. Conducted unit and integration testing using testbed and Jasmine to ensure code quality and reliability. Mentored junior developers, conducted code reviews, and provided technical guidance to improve team productivity. Worked closely with professionals and stakeholders to understand their requirements and translate them into functional features. This involves implementing complex business logic and workflows within the Angular application. Clear and comprehensive documentation of design decisions and diagrams to understand the overall structure and design principles. Ensured overall product quality throughout the entire software development life cycle.",
         },
       ],
     },
@@ -80,12 +105,12 @@ const data = {
           projecttitle:
             "PASS ML - Role as a Senior UI Developer. (2021 - 2022)",
           projectDescription:
-            "Collaborated with internal teams and vendors to fix and improve products and services. Implementation of responsive layouts, forms, and interactive components using React, JSX and Bootstrap. Implementation and Integration of REST APIs into the application using RXJS library in React. Identification and fixing bugs, as well as optimizing performance.",
+            "Collaborated with internal teams and vendors to fix and improve products and services. Implementation of responsive layouts, forms, and interactive components using React, JSX and Bootstrap. Integrated front-end components with back-end services and APIs, including RESTful APIs and GraphQL, ensuring data exchange and functionality. Conducted unit and integration testing using testing libraries like Jest and React Testing Library to maintain code quality and reliability. Identification and fixing bugs, as well as optimizing performance.",
         },
         {
           projecttitle: "SVAST - Role as an UI Developer. (2019 - 2021)",
           projectDescription:
-            "Designing and developing robust solutions to meet client requirements for functionality, scalability and performance. Worked with back-end programmers to implement REST API using Angular. Wrote understandable HTML, SCSS and Angular to build responsive web-based applications. Followed Agile development methodology to ensure product quality. Regular meetings and communication with team members to keep the track of the tasks in the projects.",
+            "Designing and developing robust solutions to meet client requirements for functionality, scalability and performance. Implemented complex user interfaces based on wireframes and design mockups, ensuring pixel-perfect rendering. Worked with back-end programmers to implement REST API using Angular. Optimized website performance through code splitting, lazy loading, and front-end build tool configurations with Webpack. Wrote understandable HTML, SCSS and Angular to build responsive web-based applications. Followed Agile development methodology to ensure product quality. Regular meetings and communication with team members to keep the track of the tasks in the projects.",
         },
       ],
     },
@@ -98,25 +123,25 @@ const data = {
         {
           projecttitle: "TUNE PROTECT - Role as a React Developer. (2019)",
           projectDescription:
-            "Translated design teams UX wireframes and mockups into responsive, interactive features using React (JSX) and building responsive websites for the website. Integration of API’s and unit testing.",
+            "Translated design teams UX wireframes and mockups into responsive, interactive features using React (JSX) and building responsive websites for the website. Integration of API’s using Axios  and unit testing with Jest.",
         },
         {
           projecttitle:
             "My Recycle Buddy - Role as an Angular Developer. (2018 - 2019)",
           projectDescription:
-            "Translated design teams UX wireframes and mockups into responsive, interactive features using HTML, CSS and Angular. Integration of REST API’s using Angular.",
+            "Implemented complex user interfaces based on wireframes and design mockups, ensuring pixel-perfect rendering using Angular, HTML, CSS, and Bootstrap. Integration of REST API’s using RXJS library.",
         },
         {
           projecttitle:
             "Commissionaires - Role as an Ionic Developer. (2018 - 2019)",
           projectDescription:
-            "Developed UI design and API integrations for mobile applications using technology like ionic framework which used ionic libraries and JavaScript framework like angular 2.",
+            "Developed cross-platform mobile applications using Ionic 2, HTML5, CSS, and Angular. Integrated and consumed RESTful APIs and web services to retrieve and display data within the mobile app. Utilized Ionic's UI components and plugins to enhance the functionality and user experience of the application. Conducted code reviews and contributed to the improvement of code quality and best practices.",
         },
         {
           projecttitle:
             "Onedles - Role as an Angular JS Developer. (2017 - 2018)",
           projectDescription:
-            "Web development using HTML, CSS, and AngularJS for building and developing UI components. Involved in building responsive web designs and fixing browser compatibility issues. Identification, fixing and tracking the bugs in the Redmine tool.",
+            "Web development using HTML, CSS, and AngularJS for building and developing UI components. Implemented and maintained features and functionalities within the web app, ensuring smooth and efficient performance. Utilized AngularJS directives and controllers to enhance the user experience and application behavior. Involved in building responsive web designs and fixing browser compatibility issues. Collaborated with cross-functional teams to meet project goals and deadlines.",
         },
       ],
     },
@@ -209,7 +234,18 @@ const data = {
   ],
   contactTitle: "CONTACT",
   contactSubtTitle: "GET IN TOUCH",
-  contact: {},
+  contact: {
+    mailLink: "mailto:rohithvijaypersonal@gmail.com",
+    mailIcon: faEnvelope,
+    mailAddress: "rohithvijaypersonal@gmail.com",
+    phoneLink: "tel:+15485778889",
+    phoneIcon: faPhone,
+    phoneNumber: "+1 548 577 8889",
+    addressIcon: faAddressCard,
+    street: "512 Glendene Cres",
+    city: "Waterloo",
+    province: "Ontario",
+  },
 };
 
 export default data;

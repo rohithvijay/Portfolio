@@ -33,48 +33,6 @@ code {
 .theme-color2 {
   background-color: #F5F5F5;
 }
-
-/*  Responsive sidebar */
-@media (max-device-width:1024px) and (orientation:portrait) {
-  .bg-img {
-    height: calc(100vh - 56px)!important;
-  }
-  .inner-content {
-    position:Relative;
-    top:56px;
-  }
-}
-@media (max-width: 800px) {
-  .toggle .w-custom-width{
-    left: 0!important;
-    transition: all 0.5s ease-in-out;
-    width: 60% !important;
-  }
-  .sidebar .w-custom-width {
-    left: -100% !important;
-    transition: all 0.5s ease-in-out;
-    width: 60% !important;
-    height: 100vh !important;
-    position: fixed !important;
-    top: 0 !important; 
-    z-index: 100 !important;
-    
-  }
-  .custom-body {
-    width: 100%;
-    left: 0;
-  }
-  .close-menu,
-  .open-menu {
-    display: block !important;
-  }
-  .toggle .close-menu,.sidebar .open-menu  {
-    display: block !important;
-  }
-  .toggle .open-menu, .sidebar .close-menu {
-    display: none !important;
-  }
-}
 .close-menu,
 .open-menu {
   position: fixed;
@@ -201,9 +159,61 @@ code {
   margin-right: 10px;
   color:#1F2937;
 }
+.contact .social {
+  position: relative !important;
+  bottom: 0 !important;;
+}
+.contact .social a {
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important;
+}
+.contact .social a:hover {
+  color: rgb(55 65 81) !important;
+}
 
 @media screen and (max-height: 575px) and (orientation:landscape){
   .img-sub {
     display:none;
+  }
+}
+/*  Responsive sidebar */
+@media (max-device-width:1024px) and (orientation:portrait) {
+  .bg-img {
+    height: calc(100vh - 56px)!important;
+  }
+  .inner-content {
+    position:Relative;
+    top:56px;
+  }
+}
+@media (max-width: 800px) {
+  .toggle .w-custom-width{
+    left: 0!important;
+    transition: all 0.5s ease-in-out;
+    width: 60% !important;
+  }
+  .sidebar .w-custom-width {
+    left: -100% !important;
+    transition: all 0.5s ease-in-out;
+    width: 60% !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0 !important; 
+    z-index: 100 !important;
+    
+  }
+  .custom-body {
+    width: 100%;
+    left: 0;
+  }
+  .close-menu,
+  .open-menu {
+    display: block !important;
+  }
+  .toggle .close-menu,.sidebar .open-menu  {
+    display: block !important;
+  }
+  .toggle .open-menu, .sidebar .close-menu {
+    display: none !important;
   }
 }

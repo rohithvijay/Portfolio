@@ -13,6 +13,8 @@ const About = () => {
     }
   }, [location]);
 
+  const aboutMe = data.about.description.split('\n');
+
   return (
     <div id="About" className="overflow-x-hidden p-10">
       <h4 className="text-gray-700 mb-5">{data.aboutTitle}</h4>
@@ -23,13 +25,15 @@ const About = () => {
       >
         {data.aboutSubTitle}
       </h2>
-      <p
-        className="pt-5 leading-7 text-slate-900 text-justify"
+      {aboutMe.map((about, index) => (
+        <p
+        className="pt-3 leading-7 text-slate-900 text-justify" key = {index}
         data-aos={"zoom-in"}
         data-aos-once="true"
       >
-        {data.about.description}
+        {about}
       </p>
+      ))}
       <div
         className="py-5 sm:py-20 lg:px-10 xl:px-56 grid grid-cols-1 md:grid-cols-3 gap-10"
         data-aos={"fade-up"}

@@ -43,13 +43,13 @@ const Technologies = () => {
 
   return (
     <div id="Technologies" className="flex-col p-10 text-left ">
-      <h4 className="text-gray-700 mb-5">TECHNOLOGIES</h4>
+      <h4 className="text-gray-700 mb-5">{data.technologiesTitle}</h4>
       <h2
         className="text-xl font-bold"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        Hands-on Technologies
+        {data.technologiesSubtTitle}
       </h2>
 
       <div
