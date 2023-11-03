@@ -170,6 +170,15 @@ code {
 .contact .social a:hover {
   color: rgb(55 65 81) !important;
 }
+.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.dark {
+  background-color: #333;
+  color: #ffffff;
+}
 
 @media screen and (max-height: 575px) and (orientation:landscape){
   .img-sub {
