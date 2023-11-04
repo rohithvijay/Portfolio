@@ -165,7 +165,7 @@ const data = {
     },
     {
       title: "React",
-      percent: 70,
+      percent: 80,
     },
     {
       title: "SQL",
