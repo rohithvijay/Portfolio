@@ -179,6 +179,9 @@ code {
   background-color: #333;
   color: #ffffff;
 }
+.m-h-80 {
+  min-height: 80px;
+}
 
 @media screen and (max-height: 575px) and (orientation:landscape){
   .img-sub {

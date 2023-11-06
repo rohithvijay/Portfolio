@@ -4,6 +4,7 @@ import Technologies from "./Technologies";
 import Contact from "./Contact";
 import Skills from "./Skills";
 import SidebarComponent from "./Sidebar";
+import Portfolio from "./Portfolio";
 
 const Content = () => {
   return (
@@ -14,6 +15,7 @@ const Content = () => {
         <div className="inner-content">
           <About />
           <Skills />
+          <Portfolio />
           <Technologies />
           <Contact />
         </div>

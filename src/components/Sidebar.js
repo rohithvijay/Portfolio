@@ -24,7 +24,7 @@ const SidebarComponent = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [selectedLink]);
+  }, [selectedLink, className]);
 
   return (
     <div className={className}>

@@ -20,6 +20,9 @@ import {
   faAddressCard,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import personal from "./../assets/personal.png";
+import foodapp from "./../assets/food-app.png";
+import movieapp from "./../assets/movie-app.png"
 
 const data = {
   name: "ROHITH VIJAY",
@@ -35,6 +38,9 @@ const data = {
     },
     {
       title: "Experience & Skills",
+    },
+    {
+      title: "Portfolio",
     },
     {
       title: "Technologies",
@@ -186,6 +192,28 @@ const data = {
     {
       title: "Vue",
       percent: 30,
+    },
+  ],
+  portfolioTitle: "PORTFOLIO",
+  portfolioSubtTitle: "Projects",
+  portfolio: [
+    {
+      title: "Portfolio",
+      description: "React, Tailwind CSS, JSX, React hooks and React Routers",
+      url: "https://github.com/rohithvijay/Portfolio",
+      img: personal
+    },
+    {
+      title: "Netflix GPT",
+      description: "React, JSX, tailwind CSS, TMDB database, React hooks, Custom React hooks, Redux state management, React Routers, firebase authentication and fetch api.",
+      url: "https://github.com/rohithvijay/Netflix-gpt",
+      img: movieapp
+    },
+    {
+      title: "Food App",
+      description: "React, Bootstrap and JSX, React Routers, Redux state management, fetch using Swiggy api, and Jest & react-testing library.",
+      url: "https://github.com/rohithvijay/React-app",
+      img: foodapp
     },
   ],
   technologiesTitle: "TECHNOLOGIES",
