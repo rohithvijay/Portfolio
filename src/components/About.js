@@ -13,17 +13,17 @@ const About = () => {
     }
   }, [location]);
 
-  const aboutMe = data.about.description.split('\n');
+  const aboutMe = data.en.about.description.split('\n');
 
   return (
     <div id="About" className="overflow-x-hidden p-10">
-      <h4 className="text-gray-700 mb-5">{data.aboutTitle}</h4>
+      <h4 className="text-gray-700 mb-5">{data.en.aboutTitle}</h4>
       <h2
         className="text-xl font-bold leading-tight"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        {data.aboutSubTitle}
+        {data.en.aboutSubTitle}
       </h2>
       {aboutMe.map((about, index) => (
         <p
@@ -39,7 +39,7 @@ const About = () => {
         data-aos={"fade-up"}
         data-aos-once="true"
       >
-        {data.about.platforms.map((platform, index) => (
+        {data.en.about.platforms.map((platform, index) => (
           <div
             key={index}
             className="m-h-64 p-6 text-2xl text-gray-800  border-b-2 border-gray-900 text-center theme-color2"
@@ -56,7 +56,7 @@ const About = () => {
           data-aos-once="true"
         >
           I am proud to say the completion of <br />
-          <b>{data.about.projectCount}</b> projects.
+          <b>{data.en.about.projectCount}</b> projects.
         </h4>
       </div>
     </div>

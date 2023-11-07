@@ -31,7 +31,7 @@ const Home = () => {
             data-aos-once="true"
             data-aos-delay="500"
           >
-            {data.greetings},
+            {data.en.greetings},
           </h4>
           <h3
             className="text-3xl text-gray-800 mb-5 font-bold md:text-5xl"
@@ -39,7 +39,7 @@ const Home = () => {
             data-aos-once="true"
             data-aos-delay="800"
           >
-            {data.self} {data.name}
+            {data.en.self} {data.en.name}
           </h3>
           <button
             className="inline-flex items-center px-3 py-2 mx-auto w-fit text-sm font-medium border  focus:z-10 focus:ring-4 focus:outline-none focus:text-white bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700 focus:ring-gray-700" 

@@ -55,16 +55,16 @@ const SidebarComponent = () => {
             </div>
           </div>
           <h2 className="text-2xl font-extrabold img-sub" data-aos="fade-down">
-            {data.name}
+            {data.en.name}
           </h2>
           <h4
             className="text-md font-bold pt-1 mb-10 pos-color img-sub"
             data-aos="fade-down"
           >
-            {data.title}
+            {data.en.title}
           </h4>
           <nav>
-            {data.contents.map((content, index) => (
+            {data.en.contents.map((content, index) => (
               <Link
                 smooth
                 key={index}

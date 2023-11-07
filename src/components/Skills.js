@@ -22,17 +22,17 @@ const Skills = () => {
       id="Experience&Skills"
       className="flex-col text-left p-10 overflow-hidden theme-color2"
     >
-      <h4 className="text-gray-700 mb-5">{data.experienceTitle}</h4>
+      <h4 className="text-gray-700 mb-5">{data.en.experienceTitle}</h4>
       <h2
         className="text-xl font-bold leading-tight mb-10"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        {data.experienceSubTitle}
+        {data.en.experienceSubTitle}
       </h2>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 xs:grid-cols-1 gap-7 mt-7">
         <ol className="relative border-l  border-gray-700 mb-6">
-          {data.experience.map((exp, index) => (
+          {data.en.experience.map((exp, index) => (
             <li
               className="mb-10 ml-10"
               key={index}
@@ -95,7 +95,7 @@ const Skills = () => {
           data-aos-once="true"
         >
           <div className="ml-5 md:ml-16 flex flex-col gap-8 mt-6">
-            {data.skills.map((skill, index) => (
+            {data.en.skills.map((skill, index) => (
               <Progress
                 key={index}
                 name={skill.title}

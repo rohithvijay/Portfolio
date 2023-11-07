@@ -43,13 +43,13 @@ const Technologies = () => {
 
   return (
     <div id="Technologies" className="flex-col p-10 text-left ">
-      <h4 className="text-gray-700 mb-5">{data.technologiesTitle}</h4>
+      <h4 className="text-gray-700 mb-5">{data.en.technologiesTitle}</h4>
       <h2
         className="text-xl font-bold"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        {data.technologiesSubtTitle}
+        {data.en.technologiesSubtTitle}
       </h2>
 
       <div
@@ -57,7 +57,7 @@ const Technologies = () => {
         data-aos={"fade-up"}
         data-aos-once="true"
       >
-        {data.technologies.map((technology, index) => (
+        {data.en.technologies.map((technology, index) => (
           <div
             className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative"
             key={index}

@@ -15,20 +15,20 @@ const Portfolio = () => {
 
   return (
     <div id="Portfolio" className="overflow-x-hidden p-10">
-      <h4 className="text-gray-700 mb-5">{data.portfolioTitle}</h4>
+      <h4 className="text-gray-700 mb-5">{data.en.portfolioTitle}</h4>
       <h2
         className="text-xl font-bold leading-tight"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        {data.portfolioSubtTitle}
+        {data.en.portfolioSubtTitle}
       </h2>
       <div
         className="py-5 sm:py-20 lg:px-10 auto-rows-fr grid grid-cols-1 xl:grid-cols-3 gap-10"
         data-aos={"fade-up"}
         data-aos-once="true"
       >
-        {data.portfolio.map((projects, index) => (
+        {data.en.portfolio.map((projects, index) => (
           <Link
             key={index}
             to={projects.url}
