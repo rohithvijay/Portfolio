@@ -6,33 +6,35 @@ import { faPencil, faDownload } from "@fortawesome/free-solid-svg-icons";
 import cycloidesExp from "../assets/Cycloides.pdf";
 import QuestExp from "../assets/QuestGlobal.pdf";
 import reflectionsExp from "../assets/Reflections.pdf";
-import data from "../data/myData";
+import { useSelector } from "react-redux";
 
 const Skills = () => {
   const location = useLocation();
+  let data = useSelector((store) => store.config.languageData);
+  const Skills = data.contents[2].title;
 
   useEffect(() => {
-    if (location.pathname === "/Experience&Skills") {
-      const element = document.getElementById("Experience&Skills");
+    if (location.pathname === `/Exp%C3%A9rienceetcomp%C3%A9tences` || location.pathname === "/Experience&Skills") {
+      const element = document.getElementById(Skills);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
-  }, [location]);
+  }, [location, Skills]);
   return (
     <div
-      id="Experience&Skills"
+      id={Skills}
       className="flex-col text-left p-10 overflow-hidden theme-color2"
     >
-      <h4 className="text-gray-700 mb-5">{data.en.experienceTitle}</h4>
+      <h4 className="text-gray-700 mb-5">{data.experienceTitle}</h4>
       <h2
         className="text-xl font-bold leading-tight mb-10"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        {data.en.experienceSubTitle}
+        {data.experienceSubTitle}
       </h2>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 xs:grid-cols-1 gap-7 mt-7">
         <ol className="relative border-l  border-gray-700 mb-6">
-          {data.en.experience.map((exp, index) => (
+          {data.experience.map((exp, index) => (
             <li
               className="mb-10 ml-10"
               key={index}
@@ -83,7 +85,7 @@ const Skills = () => {
                 }}
               >
                 <FontAwesomeIcon icon={faDownload} />
-                <span className="pl-2">Download Certificate</span>
+                <span className="pl-2">{data.buttonCertificate}</span>
               </button>
             </li>
           ))}
@@ -95,7 +97,7 @@ const Skills = () => {
           data-aos-once="true"
         >
           <div className="ml-5 md:ml-16 flex flex-col gap-8 mt-6">
-            {data.en.skills.map((skill, index) => (
+            {data.skills.map((skill, index) => (
               <Progress
                 key={index}
                 name={skill.title}

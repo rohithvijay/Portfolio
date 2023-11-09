@@ -4,16 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "../assets/profile-dp.jpg";
 import SocialLinks from "./SocialLinks";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
-import data from "../data/myData";
+import { useDispatch, useSelector } from "react-redux";
+import { changeLanguage } from "../utils/configSlice";
+import { useNavigate } from "react-router-dom";
 
 const SidebarComponent = () => {
   const [selectedLink, setSelectedLink] = useState(
     sessionStorage.getItem("selectedLink") || "Home"
   );
   const [className, setClassName] = useState("");
+  let navigate = useNavigate();
+  let data = useSelector((store) => store.config.languageData);
+  let language = useSelector((store) => store.config.language);
+  const dispatch = useDispatch();
+  const sidenav ="sidenav";
 
   useEffect(() => {
-    //setClassName("sidebar");
     sessionStorage.setItem("selectedLink", selectedLink);
     const handleScroll = () => {
       setClassName("sidebar");
@@ -26,8 +32,21 @@ const SidebarComponent = () => {
     };
   }, [selectedLink, className]);
 
+  const handleLanguageChange = (e) => {
+    if (e === "EN") {
+      e = "FR";
+      navigate("/Home");
+      setSelectedLink("Maison");
+    } else {
+      e = "EN";
+      navigate("/Maison");
+      setSelectedLink("Home");
+    }
+    dispatch(changeLanguage(e));
+  };
+
   return (
-    <div className={className}>
+    <div className={`${className} ${sidenav}`}>
       <button
         className="close-menu text-gray-800"
         onClick={() => {
@@ -48,23 +67,32 @@ const SidebarComponent = () => {
         <div className="bg-gray-800 text-white w-custom-width py-7 px-0 fixed inset-y-0 left-0 transform transition duration-200 ease-in-out z-30 text-center">
           <div className="flex space-x-2 justify-center mb-5">
             <div
-              className="relative  w-20 h-20 sm:w-44 sm:h-44 rounded-full border-double border-gray-100 shadow-sm overflow-hidden img-sub"
+              className="relative  w-20 h-20 sm:w-36 sm:h-36 rounded-full border-double border-gray-100 shadow-sm overflow-hidden img-sub"
               data-aos="fade-down"
             >
               <img className="h-full userimage" src={profile} alt="userimage" />
             </div>
           </div>
           <h2 className="text-2xl font-extrabold img-sub" data-aos="fade-down">
-            {data.en.name}
+            {data.name}
           </h2>
           <h4
             className="text-md font-bold pt-1 mb-10 pos-color img-sub"
             data-aos="fade-down"
           >
-            {data.en.title}
+            {data.title}
           </h4>
+          <button
+            className="text-md font-bold pt-1 mb-5 pos-color img-sub"
+            data-aos="fade-down"
+            onClick={() => {
+              handleLanguageChange(language);
+            }}
+          >
+            {language}
+          </button>
           <nav>
-            {data.en.contents.map((content, index) => (
+            {data.contents.map((content, index) => (
               <Link
                 smooth
                 key={index}
@@ -76,9 +104,6 @@ const SidebarComponent = () => {
                   setSelectedLink(content.title);
                   setClassName("sidebar");
                 }}
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-once="true"
               >
                 {content.title}
               </Link>

@@ -1,34 +1,36 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import data from "../data/myData";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Portfolio = () => {
   const location = useLocation();
+  let data = useSelector((store) => store.config.languageData);
+  const Portfolio = data.contents[3].title;
 
   useEffect(() => {
-    if (location.pathname === "/Portfolio") {
-      const element = document.getElementById("Portfolio");
+    if (location.pathname === `/${Portfolio}` || location.pathname === "/Portfolio") {
+      const element = document.getElementById(Portfolio);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
-  }, [location]);
+  }, [location, Portfolio]);
 
   return (
-    <div id="Portfolio" className="overflow-x-hidden p-10">
-      <h4 className="text-gray-700 mb-5">{data.en.portfolioTitle}</h4>
+    <div id={Portfolio} className="overflow-x-hidden p-10">
+      <h4 className="text-gray-700 mb-5">{data.portfolioTitle}</h4>
       <h2
         className="text-xl font-bold leading-tight"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        {data.en.portfolioSubtTitle}
+        {data.portfolioSubtTitle}
       </h2>
       <div
         className="py-5 sm:py-20 lg:px-10 auto-rows-fr grid grid-cols-1 xl:grid-cols-3 gap-10"
         data-aos={"fade-up"}
         data-aos-once="true"
       >
-        {data.en.portfolio.map((projects, index) => (
+        {data.portfolio.map((projects, index) => (
           <Link
             key={index}
             to={projects.url}

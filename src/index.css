@@ -76,6 +76,7 @@ code {
   position: absolute;
   transition: ease all 0.35s;
 }
+
 .w-custom-width .block-grey:hover:after,.block-white:hover:after {
   height: 100%;
   top: 0;
@@ -84,6 +85,7 @@ code {
 .block-white,.block-grey {
   padding: 0.625rem 1rem;
   display:block;
+  position: relative;
 }
 .block-white {
   color:#ffffff;
@@ -222,10 +224,16 @@ code {
   .open-menu {
     display: block !important;
   }
-  .toggle .close-menu,.sidebar .open-menu  {
+  .toggle.sidenav .close-menu,.sidebar .open-menu  {
     display: block !important;
   }
   .toggle .open-menu, .sidebar .close-menu {
     display: none !important;
+  }
+  .sidenav .w-custom-width{
+    left:-100%;
+  }
+  .sidenav .close-menu {
+    display:none !important;
   }
 }

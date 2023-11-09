@@ -1,11 +1,12 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import data from "../data/myData";
+import { useSelector } from "react-redux";
 
 const SocialLinks = () => {
+  let data = useSelector((store) => store.config.languageData);
   return (
     <div className="flex justify-center absolute bottom-8 w-full img-sub social">
-      {data.en.socialLinks.map((social, index) => (
+      {data.socialLinks.map((social, index) => (
         <Link
           key={index}
           to={social.link}

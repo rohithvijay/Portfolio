@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import data from "../data/myData";
+import { useSelector } from "react-redux";
 
 const Technologies = () => {
   const location = useLocation();
@@ -9,6 +9,8 @@ const Technologies = () => {
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
   const [count4, setCount4] = useState(0);
+  let data = useSelector((store) => store.config.languageData);
+  const Technologies = data.contents[4].title;
 
   useEffect(() => {
     function counter(id, start, end, duration) {
@@ -35,21 +37,21 @@ const Technologies = () => {
     counter("projects", 0, 55, 3000);
     counter("clients", 0, 30, 3000);
     counter("years", 0, 6, 3000);
-    if (location.pathname === "/Technologies") {
-      const element = document.getElementById("Technologies");
+    if (location.pathname === `/Lestechnologies` || location.pathname === "/Technologies") {
+      const element = document.getElementById(Technologies);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
-  }, [location]);
+  }, [location, Technologies]);
 
   return (
-    <div id="Technologies" className="flex-col p-10 text-left ">
-      <h4 className="text-gray-700 mb-5">{data.en.technologiesTitle}</h4>
+    <div id={Technologies} className="flex-col p-10 text-left ">
+      <h4 className="text-gray-700 mb-5">{data.technologiesTitle}</h4>
       <h2
         className="text-xl font-bold"
         data-aos={"slide-right"}
         data-aos-once="true"
       >
-        {data.en.technologiesSubtTitle}
+        {data.technologiesSubtTitle}
       </h2>
 
       <div
@@ -57,7 +59,7 @@ const Technologies = () => {
         data-aos={"fade-up"}
         data-aos-once="true"
       >
-        {data.en.technologies.map((technology, index) => (
+        {data.technologies.map((technology, index) => (
           <div
             className="m-h-64 p-6 text-3xl sm:text-5xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center theme-color2 cursor-pointer relative"
             key={index}
@@ -76,27 +78,27 @@ const Technologies = () => {
               {count1}
             </h3>
             <h3 className="text-sm sm:text-lg mt-5">
-              CUPS OF <br />
-              COFFEE
+              {data.cups} <br />
+              {data.coffee}
             </h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="projects">
               {count2}
             </h3>
-            <h3 className="text-sm sm:text-lg mt-5">PROJECTS</h3>
+            <h3 className="text-sm sm:text-lg mt-5">{data.projects}</h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-3xl sm:text-5xl font-bold mt-5" id="clients">
               {count3}
             </h3>
-            <h3 className="text-sm sm:text-lg mt-5">CLIENTS</h3>
+            <h3 className="text-sm sm:text-lg mt-5">{data.clients}</h3>
           </div>
           <div className="bg-white m-h-64 p-6 text-2xl text-gray-800 shadow-lg border-b-2 border-gray-900 text-center">
             <h3 className="text-3xl sm:text-5xl font-bold  mt-5" id="years">
               {count4}
             </h3>
-            <h3 className="text-sm sm:text-lg mt-5">YEARS</h3>
+            <h3 className="text-sm sm:text-lg mt-5">{data.years}</h3>
           </div>
         </div>
       </div>
