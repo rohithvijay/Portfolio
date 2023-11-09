@@ -13,7 +13,7 @@ const SidebarComponent = () => {
   const [className, setClassName] = useState("");
 
   useEffect(() => {
-    setClassName("sidebar");
+    //setClassName("sidebar");
     sessionStorage.setItem("selectedLink", selectedLink);
     const handleScroll = () => {
       setClassName("sidebar");
