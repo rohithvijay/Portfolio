@@ -57,7 +57,7 @@ const About = () => {
         ))}
       </div>
       <div className="flex-col mt-5 sm:mt-14 flex flex-auto text-grey-800 sm:p-14 p-5 theme-color2">
-        {language.EN ? (
+        {language === 'FR' ? (
           <h4
             className="md:text-2xl font-medium "
             data-aos={"fade-left"}
