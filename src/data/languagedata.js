@@ -7,7 +7,7 @@ import {
   faJira,
   faGit,
   faBootstrap,
-  faInvision,
+  faNode,
   faVuejs,
   faLinkedinIn,
   faSkype,
@@ -183,6 +183,10 @@ export const EN = {
       percent: 80,
     },
     {
+      title: "Node",
+      percent: 70,
+    },
+    {
       title: "SQL",
       percent: 65,
     },
@@ -267,8 +271,8 @@ export const EN = {
       icon: faGit,
     },
     {
-      title: "INVISION",
-      icon: faInvision,
+      title: "NODE",
+      icon: faNode,
     },
   ],
   contactTitle: "CONTACT",
@@ -448,6 +452,10 @@ export const FR = {
       percent: 80,
     },
     {
+      title: "Node",
+      percent: 70,
+    },
+    {
       title: "SQL",
       percent: 65,
     },
@@ -532,8 +540,8 @@ export const FR = {
       icon: faGit,
     },
     {
-      title: "INVISION",
-      icon: faInvision,
+      title: "NODE",
+      icon: faNode,
     },
   ],
   contactTitle: "CONTACT",
