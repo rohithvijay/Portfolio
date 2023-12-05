@@ -23,6 +23,7 @@ import {
 import personal from "./../assets/personal.png";
 import foodapp from "./../assets/food-app.png";
 import movieapp from "./../assets/movie-app.png";
+import memoryapp from "./../assets/memory-game-app.png";
 
 export const EN = {
   name: "ROHITH VIJAY",
@@ -229,6 +230,13 @@ export const EN = {
         "React, Bootstrap and JSX, React Routers, Redux state management, fetch using Swiggy api, and Jest & react-testing library.",
       url: "https://github.com/rohithvijay/FoodApp",
       img: foodapp,
+    },
+    {
+      title: "Memory Game",
+      description:
+        "React 18, JSX, ReactRouter, React Hooks & Tailwind CSS.",
+      url: "https://github.com/rohithvijay/MemoryGame",
+      img: memoryapp,
     },
   ],
   technologiesTitle: "TECHNOLOGIES",
@@ -481,23 +489,30 @@ export const FR = {
   portfolio: [
     {
       title: "Portfolio",
-      description: "React, Tailwind CSS, JSX, React hooks and React Routers",
+      description: "React 18, Tailwind CSS, JSX, hooks React et routeurs React",
       url: "https://github.com/rohithvijay/Portfolio",
       img: personal,
     },
     {
       title: "Netflix GPT",
       description:
-        "React, JSX, tailwind CSS, TMDB database, React hooks, Custom React hooks, Redux state management, React Routers, firebase authentication and fetch api.",
+        "React, JSX, tailwind CSS, base de données TMDB, hooks React, hooks React personnalisés, gestion de l'état Redux, routeurs React, authentification Firebase et API de récupération.",
       url: "https://github.com/rohithvijay/Netflix-gpt",
       img: movieapp,
     },
     {
       title: "Food App",
       description:
-        "React, Bootstrap and JSX, React Routers, Redux state management, fetch using Swiggy api, and Jest & react-testing library.",
+        "React, Bootstrap, JSX, React Routers, gestion de l'état Redux, récupération à l'aide de l'API Swiggy, de la bibliothèque Jest et de test de réaction.",
       url: "https://github.com/rohithvijay/FoodApp",
       img: foodapp,
+    },
+    {
+      title: "Memory Game",
+      description:
+        "React 18, JSX, ReactRouter, React Hooks et Tailwind CSS.",
+      url: "https://github.com/rohithvijay/MemoryGame",
+      img: memoryapp,
     },
   ],
   technologiesTitle: "LES TECHNOLOGIES",
