@@ -227,7 +227,7 @@ export const EN = {
       title: "Food App",
       description:
         "React, Bootstrap and JSX, React Routers, Redux state management, fetch using Swiggy api, and Jest & react-testing library.",
-      url: "https://github.com/rohithvijay/React-app",
+      url: "https://github.com/rohithvijay/FoodApp",
       img: foodapp,
     },
   ],
@@ -496,7 +496,7 @@ export const FR = {
       title: "Food App",
       description:
         "React, Bootstrap and JSX, React Routers, Redux state management, fetch using Swiggy api, and Jest & react-testing library.",
-      url: "https://github.com/rohithvijay/React-app",
+      url: "https://github.com/rohithvijay/FoodApp",
       img: foodapp,
     },
   ],
