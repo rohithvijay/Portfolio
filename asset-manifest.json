@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.285f4664.css",
-    "main.js": "/Portfolio/static/js/main.db5181e1.js",
+    "main.css": "/Portfolio/static/css/main.dd0c7659.css",
+    "main.js": "/Portfolio/static/js/main.ca47342f.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/memory-game-app.png": "/Portfolio/static/media/memory-game-app.5051d984281747f4616c.png",
     "static/media/movie-app.png": "/Portfolio/static/media/movie-app.c423e7f4c6accb2018ef.png",
@@ -10,16 +10,16 @@
     "static/media/food-app.png": "/Portfolio/static/media/food-app.c1a1ea0b1e0119f2d176.png",
     "static/media/personal.png": "/Portfolio/static/media/personal.64e04929fb069d6c4441.png",
     "static/media/profile-dp.jpg": "/Portfolio/static/media/profile-dp.9a1e9ed750735975ff54.jpg",
-    "static/media/FrontEndDeveloper.pdf": "/Portfolio/static/media/FrontEndDeveloper.b2adc22bc0d9b51a5501.pdf",
+    "static/media/Resume.pdf": "/Portfolio/static/media/Resume.b2adc22bc0d9b51a5501.pdf",
     "static/media/Reflections.pdf": "/Portfolio/static/media/Reflections.b26965c493312a60468d.pdf",
     "static/media/QuestGlobal.pdf": "/Portfolio/static/media/QuestGlobal.cb9a0252909db2ecfb25.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.285f4664.css.map": "/Portfolio/static/css/main.285f4664.css.map",
-    "main.db5181e1.js.map": "/Portfolio/static/js/main.db5181e1.js.map",
+    "main.dd0c7659.css.map": "/Portfolio/static/css/main.dd0c7659.css.map",
+    "main.ca47342f.js.map": "/Portfolio/static/js/main.ca47342f.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.285f4664.css",
-    "static/js/main.db5181e1.js"
+    "static/css/main.dd0c7659.css",
+    "static/js/main.ca47342f.js"
   ]
 }
