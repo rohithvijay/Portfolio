@@ -14,7 +14,10 @@ const Skills = () => {
   const Skills = data.contents[2].title;
 
   useEffect(() => {
-    if (location.pathname === `/Exp%C3%A9rienceetcomp%C3%A9tences` || location.pathname === "/Experience&Skills") {
+    if (
+      location.pathname === `/Exp%C3%A9rienceetcomp%C3%A9tences` ||
+      location.pathname === "/Experience&Skills"
+    ) {
       const element = document.getElementById(Skills);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
@@ -56,7 +59,13 @@ const Skills = () => {
                     <h3 className="font-semibold text-gray-600">
                       {projects.projecttitle}
                     </h3>
-                    <p>{projects.projectDescription}</p>
+                    <ul className="list-none">
+                      {projects.projectDescription
+                        .split("!")
+                        .map((point, index) => (
+                          <li key={index}>{point}</li>
+                        ))}
+                    </ul>
                   </div>
                 ))}
               </div>

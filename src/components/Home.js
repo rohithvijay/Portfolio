@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import resumePDF from "../assets/FrontEndDeveloper.pdf";
+import resumePDF from "../assets/Resume.pdf";
 import { useSelector } from "react-redux";
 
 const Home = () => {
