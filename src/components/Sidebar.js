@@ -36,10 +36,10 @@ const SidebarComponent = () => {
     if (e === "EN") {
       e = "FR";
       navigate("/Home");
-      setSelectedLink("Maison");
+      setSelectedLink("Accueil");
     } else {
       e = "EN";
-      navigate("/Maison");
+      navigate("/Accueil");
       setSelectedLink("Home");
     }
     dispatch(changeLanguage(e));

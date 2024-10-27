@@ -285,7 +285,7 @@ const data = {
     self: "C'est",
     contents: [
       {
-        title: "Maison",
+        title: "Accueil",
       },
       {
         title: "À propos",
