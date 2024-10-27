@@ -36,7 +36,7 @@ const Technologies = () => {
     counter("coffee", 0, 1610, 50);
     counter("projects", 0, 55, 3000);
     counter("clients", 0, 30, 3000);
-    counter("years", 0, 6, 3000);
+    counter("years", 0, 7, 3000);
     if (location.pathname === `/Lestechnologies` || location.pathname === "/Technologies") {
       const element = document.getElementById(Technologies);
       if (element) element.scrollIntoView({ behavior: "smooth" });

@@ -26,7 +26,7 @@ const Portfolio = () => {
         {data.portfolioSubtTitle}
       </h2>
       <div
-        className="py-5 sm:py-20 lg:px-10 auto-rows-fr grid grid-cols-1 sm:grid-cols-2 gap-10"
+        className="py-5 sm:py-20 lg:px-10 auto-rows-fr grid grid-cols-1 xl:grid-cols-3 gap-10"
         data-aos={"fade-up"}
         data-aos-once="true"
       >

@@ -1,0 +1,109 @@
+function solution(S) {
+    let isBFound = false;
+    for (let i = 0; i < S.length; i++) {
+        if (S[i] === 'b') {
+            isBFound = true;
+        } else if (S[i] === 'a' && isBFound) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+import React, { Fragment, useState, useRef, useEffect } from 'react';
+
+function Solution() {
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const [isActive, setIsActive] = useState(false);
+  const [showTimer, setShowTimer] = useState(true);
+  const timerRef = useRef(null);
+
+  const formatTime = (value) => {
+    return value < 10 ? `0${value}` : `${value}`;
+  };
+
+  const startTimer = () => {
+    setIsActive(true);
+    setShowTimer(false);
+  };
+
+  const pauseResumeTimer = () => {
+    setIsActive((prevIsActive) => !prevIsActive);
+  };
+
+  const resetTimer = () => {
+    clearInterval(timerRef.current);
+    setIsActive(false);
+    setShowTimer(true); // Show h1 when timer resets
+    setMinutes(0);
+    setSeconds(0);
+  };
+
+  useEffect(() => {
+    if (isActive) {
+      timerRef.current = setInterval(() => {
+        if (seconds === 0) {
+          if (minutes === 0) {
+            clearInterval(timerRef.current);
+            setIsActive(false);
+            setShowTimer(true);
+          } else {
+            setMinutes((prevMinutes) => prevMinutes - 1);
+            setSeconds(59);
+          }
+        } else {
+          setSeconds((prevSeconds) => prevSeconds - 1);
+        }
+      }, 1000);
+    } else {
+      clearInterval(timerRef.current);
+    }
+
+    return () => clearInterval(timerRef.current);
+  }, [isActive, minutes, seconds]);
+
+  const handleMinutesChange = (e) => {
+    const value = parseInt(e.target.value);
+    setMinutes(isNaN(value) ? 0 : value);
+  };
+
+  const handleSecondsChange = (e) => {
+    const value = parseInt(e.target.value);
+    setSeconds(isNaN(value) ? 0 : value);
+  };
+
+  return (
+      <Fragment>
+      <label>
+        <input
+          type="number"
+          value={minutes}
+          onChange={handleMinutesChange}
+        />
+        Minutes
+      </label>
+      <label>
+        <input
+          type="number"
+          value={seconds}
+          onChange={handleSecondsChange}
+        />
+        Seconds
+      </label>
+      <button onClick={startTimer}>START</button>
+      <button onClick={pauseResumeTimer}>
+        {isActive ? 'PAUSE' : 'RESUME'}
+      </button>
+      <button onClick={resetTimer}>RESET</button>
+      {showTimer && (
+        <h1 data-testid="running-clock">
+          {formatTime(minutes)}:{formatTime(seconds)}
+        </h1>
+      )}
+    </Fragment>
+  );
+}
+
+export default Solution;

@@ -6,6 +6,7 @@ import { faPencil, faDownload } from "@fortawesome/free-solid-svg-icons";
 import cycloidesExp from "../assets/Cycloides.pdf";
 import QuestExp from "../assets/QuestGlobal.pdf";
 import reflectionsExp from "../assets/Reflections.pdf";
+import appfabsExp from "../assets/Appfabs.pdf";
 import { useSelector } from "react-redux";
 
 const Skills = () => {
@@ -14,10 +15,7 @@ const Skills = () => {
   const Skills = data.contents[2].title;
 
   useEffect(() => {
-    if (
-      location.pathname === `/Exp%C3%A9rienceetcomp%C3%A9tences` ||
-      location.pathname === "/Experience&Skills"
-    ) {
+    if (location.pathname === `/Exp%C3%A9rienceetcomp%C3%A9tences` || location.pathname === "/Experience&Skills") {
       const element = document.getElementById(Skills);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
@@ -59,13 +57,7 @@ const Skills = () => {
                     <h3 className="font-semibold text-gray-600">
                       {projects.projecttitle}
                     </h3>
-                    <ul className="list-none">
-                      {projects.projectDescription
-                        .split("!")
-                        .map((point, index) => (
-                          <li key={index}>{point}</li>
-                        ))}
-                    </ul>
+                    <p>{projects.projectDescription}</p>
                   </div>
                 ))}
               </div>
@@ -76,17 +68,21 @@ const Skills = () => {
                   const link = document.createElement("a");
                   switch (index) {
                     case 0:
+                      link.href = appfabsExp;
+                      link.download = exp.title + ".pdf";
+                      break; 
+                    case 1:
                       link.href = QuestExp;
                       link.download = exp.title + ".pdf";
                       break;
-                    case 1:
+                    case 2:
                       link.href = reflectionsExp;
                       link.download = exp.title + ".pdf";
                       break;
-                    case 2:
+                    case 3:
                       link.href = cycloidesExp;
                       link.download = exp.title + ".pdf";
-                      break;
+                      break;                   
                     default:
                       break;
                   }

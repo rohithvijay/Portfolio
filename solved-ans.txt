@@ -1,0 +1,123 @@
+import React, { useState, useRef, useEffect, Fragment } from 'react';
+
+function Solution() {
+  const [inputMinutes, setInputMinutes] = useState(0);
+  const [inputSeconds, setInputSeconds] = useState(0);
+  const [initialMinutes, setInitialMinutes] = useState(0);
+  const [initialSeconds, setInitialSeconds] = useState(0);
+  const [runningMinutes, setRunningMinutes] = useState(0);
+  const [runningSeconds, setRunningSeconds] = useState(0);
+  const [pausedMinutes, setPausedMinutes] = useState(0);
+  const [pausedSeconds, setPausedSeconds] = useState(0);
+  const [isActive, setIsActive] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const timerRef = useRef(null);
+
+  const formatTime = (value) => {
+    return value < 10 ? `0${value}` : `${value}`;
+  };
+
+  const startTimer = () => {
+    setIsActive(true);
+    setIsPaused(false);
+  };
+
+  const pauseResumeTimer = () => {
+    if (isActive) {
+      setIsPaused((prevIsPaused) => !prevIsPaused);
+    }
+  };
+
+  const resetTimer = () => {
+    clearInterval(timerRef.current);
+    setIsActive(false);
+    setIsPaused(false);
+    setInputMinutes(initialMinutes);
+    setInputSeconds(initialSeconds);
+    setRunningMinutes(initialMinutes);
+    setRunningSeconds(initialSeconds);
+    setPausedMinutes(0);
+    setPausedSeconds(0);
+  };
+
+  useEffect(() => {
+    if (isActive && !isPaused) {
+      timerRef.current = setInterval(() => {
+        if (runningSeconds === 0) {
+          if (runningMinutes === 0) {
+            clearInterval(timerRef.current);
+            setIsActive(false);
+            setRunningMinutes(0);
+            setRunningSeconds(0);
+          } else {
+            setRunningMinutes((prevRunningMinutes) => prevRunningMinutes - 1);
+            setRunningSeconds(59);
+          }
+        } else {
+          setRunningSeconds((prevRunningSeconds) => prevRunningSeconds - 1);
+        }
+      }, 1000);
+    } else {
+      clearInterval(timerRef.current);
+      if (isPaused) {
+        setPausedMinutes(runningMinutes);
+        setPausedSeconds(runningSeconds);
+      }
+    }
+
+    return () => clearInterval(timerRef.current);
+  }, [isActive, isPaused, runningMinutes, runningSeconds]);
+
+  const handleMinutesChange = (e) => {
+    const value = parseInt(e.target.value);
+    setInputMinutes(isNaN(value) ? 0 : value);
+  };
+
+  const handleSecondsChange = (e) => {
+    const value = parseInt(e.target.value);
+    setInputSeconds(isNaN(value) ? 0 : value);
+  };
+
+  useEffect(() => {
+    setInitialMinutes(inputMinutes);
+    setInitialSeconds(inputSeconds);
+    setRunningMinutes(inputMinutes);
+    setRunningSeconds(inputSeconds);
+  }, [inputMinutes, inputSeconds]);
+
+  return (
+    <Fragment>
+      <label>
+        <input
+          type="number"
+          value={inputMinutes}
+          onChange={handleMinutesChange}
+          disabled={isActive}
+        />
+        Minutes
+      </label>
+      <label>
+        <input
+          type="number"
+          value={inputSeconds}
+          onChange={handleSecondsChange}
+          disabled={isActive}
+        />
+        Seconds
+      </label>
+      <button onClick={startTimer} disabled={isActive}>
+        START
+      </button>
+      <button onClick={pauseResumeTimer} disabled={!isActive}>
+        {isPaused ? 'RESUME' : 'PAUSE'}
+      </button>
+      <button onClick={resetTimer}>RESET</button>
+      <h1 data-testid="running-clock">
+        {formatTime(isPaused ? pausedMinutes : runningMinutes)}:
+        {formatTime(isPaused ? pausedSeconds : runningSeconds)}
+      </h1>
+    </Fragment>
+  );
+}
+
+export default Solution;

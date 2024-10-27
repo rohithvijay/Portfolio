@@ -7,7 +7,7 @@ import {
   faJira,
   faGit,
   faBootstrap,
-  faNode,
+  faInvision,
   faVuejs,
   faLinkedinIn,
   faSkype,
@@ -23,7 +23,7 @@ import {
 import personal from "./../assets/personal.png";
 import foodapp from "./../assets/food-app.png";
 import movieapp from "./../assets/movie-app.png";
-import memoryapp from "./../assets/memory-game-app.png";
+import memoryGame from "./../assets/memory-game.png";
 
 export const EN = {
   name: "ROHITH VIJAY",
@@ -77,7 +77,7 @@ export const EN = {
   aboutSubTitle: "WHO AM I ?",
   about: {
     description:
-      "Creative Front End Software Developer with 6 years of experience having a strong background in developing robust, secure, and user-friendly web and mobile applications in various verticals such as e-Commerce, Health care and Banking and Financial services using JavaScript frameworks like React and Angular.\nI love exploring new technologies and building something that didn’t exist before.",
+      "Creative Front End Software Developer with 7 years of experience having a strong background in developing robust, secure, and user-friendly web and mobile applications in various verticals such as e-Commerce, Health care and Banking and Financial services using JavaScript frameworks like React and Angular.\nI love exploring new technologies and building something that didn’t exist before.",
     platforms: [
       {
         title: "Web Design",
@@ -98,6 +98,20 @@ export const EN = {
   experienceSubTitle: "Work Experience & Skills",
   experience: [
     {
+      title: "AppFabs Inc",
+      role: "Software Engineer",
+      startdate: "Feb 2024 ",
+      enddate: "Oct 2024",
+      project: [
+        {
+          projecttitle:
+            "NLogic - Role as a Software Engineer. (2024)",
+          projectDescription:
+            "Designing and implementing responsive layouts, forms, and interactive components using Angular 13, Typescript, SCSS, and Synfusion grid for table integration in front-end. Translated ambiguous requirements into functional features by working closely with professionals and stakeholders to understand their needs and by implementing complex business logic and workflows within the Angular application. Leveraged npm (Node Package Manager) proficiently within Angular projects to manage dependencies, streamline package installations, and facilitate efficient project scaffolding, ensuring optimized development workflows and reliable application builds. Proficiently utilized Azure DevOps for meticulous task tracking, bug identification, and resolution, ensuring efficient bug-fixing processes and streamlined task management for successful project outcomes.",
+        },
+      ],
+    },
+    {
       title: "Quest Global",
       role: "Senior Software Engineer",
       startdate: "MAR 2022",
@@ -107,7 +121,7 @@ export const EN = {
           projecttitle:
             "Canon Medical - Role as a Senior Software Engineer. (2022 - 2023)",
           projectDescription:
-            "• Designing and Implementation of responsive layouts, forms, and interactive components using Angular 13, React JS, HTML, SCSS and Tailwind CSS in multiple projects.!• Translated ambiguous requirements into functional features by working closely with professionals and stakeholders to understand their needs and by implementing complex business logic and workflows within the Angular application.!• Utilized various asynchronous request methods in Angular, including Promises, Observables from RxJS, and the HttpClient module, to perform diverse API calls, manage data retrieval and manipulation, ensuring adaptability and efficiency in handling asynchronous operations within the application.!• Applied actions, reducers, and the NgRX store to manage complex application states effectively in angular.!• Reduced the number of application bugs from 40 to 5 by conducting unit and integration tests utilizing TestBed, Jasmine, and Karma, ensuring code quality, functional accuracy, and robust test coverage to maintain application reliability and enhance overall software quality.!• Leveraged Fetch and Axios libraries in React to establish efficient asynchronous data fetching and handling from RESTful APIs, ensuring seamless communication between the front-end and back-end, resulting in enhanced application performance and responsiveness.!• Applied actions, reducers, and the Redux store to manage complex application states effectively in React.!• Diminished application bugs significantly  by rigorously executing unit and integration tests employing JEST and React Testing Library for React project.!• Implemented Git-based deployment strategies, leveraging tools like GitHub Actions, to automate the deployment pipeline and efficiently push code changes to production, ensuring a streamlined and reliable deployment process.!• Mentored junior developers, conducted code reviews, and provided technical guidance to improve team productivity.!• Clear and comprehensive documentation of design decisions and diagrams to understand the overall structure and design principles.!• Leveraged npm (Node Package Manager) proficiently within Angular projects to manage dependencies, streamline package installations, and facilitate efficient project scaffolding, ensuring optimized development workflows and reliable application builds.!• Proficiently utilized Redmine for meticulous task tracking, bug identification, and resolution, ensuring efficient bug-fixing processes and streamlined task management for successful project outcomes.",
+            "Designing and Implementation of responsive layouts, forms, and interactive components using Angular, React, HTML5, SCSS and Bootstrap 5. Optimized website performance through code splitting, lazy loading, and front-end build tool configurations with Webpack. Collaborated with the back-end development team to integrate front-end components with RESTful APIs using RXJS library. Conducted unit and integration testing using testbed and Jasmine to ensure code quality and reliability. Mentored junior developers, conducted code reviews, and provided technical guidance to improve team productivity. Worked closely with professionals and stakeholders to understand their requirements and translate them into functional features. This involves implementing complex business logic and workflows within the Angular application. Clear and comprehensive documentation of design decisions and diagrams to understand the overall structure and design principles. Ensured overall product quality throughout the entire software development life cycle.",
         },
       ],
     },
@@ -121,12 +135,12 @@ export const EN = {
           projecttitle:
             "PASS ML - Role as a Senior UI Developer. (2021 - 2022)",
           projectDescription:
-            "• Crafted a dynamic user interface featuring interactive elements and refined forms by leveraging React, JSX, and Bootstrap 5, ensuring exceptional responsiveness across various devices and screen dimensions for a seamless user experience.!• Integrated React.js with Node.js and Express to create a full-stack application, utilizing RESTful APIs for seamless data communication between the front-end and back-end, ensuring a cohesive and efficient user experience.!• Employed performance optimization techniques such as memoization, virtual DOM usage, and code splitting to enhance application speed and responsiveness.!• Conducted thorough unit and integration testing using reliable testing frameworks like Jest and React Testing Library, guaranteeing the enduring quality and reliability of the codebase.!• Enhanced system performance by meticulously identifying and remedying bugs, resulting in notable improvements in overall system efficiency and reliability.",
+            "Collaborated with internal teams and vendors to fix and improve products and services. Implementation of responsive layouts, forms, and interactive components using React, JSX and Bootstrap. Integrated front-end components with back-end services and APIs, including RESTful APIs and GraphQL, ensuring data exchange and functionality. Conducted unit and integration testing using testing libraries like Jest and React Testing Library to maintain code quality and reliability. Identification and fixing bugs, as well as optimizing performance.",
         },
         {
           projecttitle: "SVAST - Role as an UI Developer. (2019 - 2021)",
           projectDescription:
-            "• Developed responsive user interfaces with interactive components and optimized forms using a combination of Angular 9, HTML5, SCSS and Bootstrap 5, ensuring seamless functionality across diverse devices and screen sizes.!• Enabled seamless collaboration across internal teams and vendors by orchestrating weekly meetings, delivering comprehensive task lists, and setting clear deadlines for developers, leading to the enhancement and refinement of products and services.!• Employed lazy loading of modules and routes to defer loading non-essential parts of the application, reducing initial load times and improving user experience.!• Performed meticulous unit and integration testing utilizing robust testing libraries such as Testbed and Jasmine, ensuring the sustained quality and dependability of the codebase.!• Utilized Jira as the primary project management tool, proficiently managing tasks, tracking project progress, and facilitating seamless communication among team members, ensuring efficient workflow and timely project deliveries.",
+            "Designing and developing robust solutions to meet client requirements for functionality, scalability and performance. Implemented complex user interfaces based on wireframes and design mockups, ensuring pixel-perfect rendering. Worked with back-end programmers to implement REST API using Angular. Optimized website performance through code splitting, lazy loading, and front-end build tool configurations with Webpack. Wrote understandable HTML, SCSS and Angular to build responsive web-based applications. Followed Agile development methodology to ensure product quality. Regular meetings and communication with team members to keep the track of the tasks in the projects.",
         },
       ],
     },
@@ -139,25 +153,25 @@ export const EN = {
         {
           projecttitle: "TUNE PROTECT - Role as a React Developer. (2019)",
           projectDescription:
-            "• Engineered a vibrant and dynamic website through adept utilization of React, JSX, and Bootstrap, ensuring seamless responsiveness and engaging user experiences.!• Integration of API’s using Axios  and unit testing with Jest.!• Developed and tested web applications rigorously to ensure cross-browser compatibility, employing industry best practices and tools to deliver consistent user experiences across multiple browsers, including Chrome, Firefox, Safari, and Edge.",
+            "Translated design teams UX wireframes and mockups into responsive, interactive features using React (JSX) and building responsive websites for the website. Integration of API’s using Axios  and unit testing with Jest.",
         },
         {
           projecttitle:
             "My Recycle Buddy - Role as an Angular Developer. (2018 - 2019)",
           projectDescription:
-            "• Transformed UX wireframes from the design team into production-ready, responsive, and accessible components using Angular 6, JavaScript, PHP and Bootstrap 4, resulting in a remarkable 2x enhancement in website performance.!• Integration of REST API’s using RXJS library.!• Leveraged Redmine as a robust issue-tracking tool to efficiently identify, prioritize, and resolve software bugs, ensuring systematic bug management and timely issue resolution within the project lifecycle.",
+            "Implemented complex user interfaces based on wireframes and design mockups, ensuring pixel-perfect rendering using Angular, HTML, CSS, and Bootstrap. Integration of REST API’s using RXJS library.",
         },
         {
           projecttitle:
             "Commissionaires - Role as an Ionic Developer. (2018 - 2019)",
           projectDescription:
-            "• Developed cross-platform mobile applications using Ionic 2, HTML5, CSS, and Angular.!• Integrated and consumed RESTful APIs and web services to retrieve and display data within the mobile app.!• Utilized Ionic's UI components and plugins to enhance the functionality and user experience of the application.!• Conducted code reviews and contributed to the improvement of code quality and best practices.",
+            "Developed cross-platform mobile applications using Ionic 2, HTML5, CSS, and Angular. Integrated and consumed RESTful APIs and web services to retrieve and display data within the mobile app. Utilized Ionic's UI components and plugins to enhance the functionality and user experience of the application. Conducted code reviews and contributed to the improvement of code quality and best practices.",
         },
         {
           projecttitle:
             "Onedles - Role as an Angular JS Developer. (2017 - 2018)",
           projectDescription:
-            "• Web development using HTML, CSS, and AngularJS for building and developing UI components.!• Implemented and maintained features and functionalities within the web app, ensuring smooth and efficient performance.!• Utilized AngularJS directives and controllers to enhance the user experience and application behavior.!• Involved in building responsive web designs and fixing browser compatibility issues.!• Collaborated with cross-functional teams to meet project goals and deadlines.",
+            "Web development using HTML, CSS, and AngularJS for building and developing UI components. Implemented and maintained features and functionalities within the web app, ensuring smooth and efficient performance. Utilized AngularJS directives and controllers to enhance the user experience and application behavior. Involved in building responsive web designs and fixing browser compatibility issues. Collaborated with cross-functional teams to meet project goals and deadlines.",
         },
       ],
     },
@@ -182,10 +196,6 @@ export const EN = {
     {
       title: "React",
       percent: 80,
-    },
-    {
-      title: "Node",
-      percent: 70,
     },
     {
       title: "SQL",
@@ -233,9 +243,10 @@ export const EN = {
     },
     {
       title: "Memory Game",
-      description: "React 18, JSX, ReactRouter, React Hooks & Tailwind CSS.",
+      description:
+        "This is a memory test game created with React 18, ReactRouter, useContext and Tailwind CSS.",
       url: "https://github.com/rohithvijay/MemoryGame",
-      img: memoryapp,
+      img: memoryGame,
     },
   ],
   technologiesTitle: "TECHNOLOGIES",
@@ -278,8 +289,8 @@ export const EN = {
       icon: faGit,
     },
     {
-      title: "NODE",
-      icon: faNode,
+      title: "INVISION",
+      icon: faInvision,
     },
   ],
   contactTitle: "CONTACT",
@@ -314,7 +325,7 @@ export const FR = {
   rights: "Tous droits réservés",
   contents: [
     {
-      title: "Maison",
+      title: "Accueil",
     },
     {
       title: "À propos",
@@ -350,7 +361,7 @@ export const FR = {
   aboutSubTitle: "QUI SUIS JE ?",
   about: {
     description:
-      "Développeur de logiciels front-end créatif avec 6 ans d'expérience et une solide expérience dans le développement d'applications Web et mobiles robustes, sécurisées et conviviales dans divers secteurs verticaux tels que le commerce électronique, les soins de santé et les services bancaires et financiers à l'aide de frameworks JavaScript tels que React et Angular.\nJ'aime explorer les nouvelles technologies et créer quelque chose qui n'existait pas auparavant.",
+      "Développeur de logiciels front-end créatif avec 7 ans d'expérience et une solide expérience dans le développement d'applications Web et mobiles robustes, sécurisées et conviviales dans divers secteurs verticaux tels que le commerce électronique, les soins de santé et les services bancaires et financiers à l'aide de frameworks JavaScript tels que React et Angular.\nJ'aime explorer les nouvelles technologies et créer quelque chose qui n'existait pas auparavant.",
     platforms: [
       {
         title: "Création de sites web",
@@ -370,6 +381,20 @@ export const FR = {
   experienceTitle: "Expérience",
   experienceSubTitle: "Expérience professionnelle et compétences",
   experience: [
+    {
+      title: "AppFabs Inc",
+      role: "Ingénieur logiciel",
+      startdate: "février 2024 ",
+      enddate: "Octobre 2024",
+      project: [
+        {
+          projecttitle:
+            "NLogic - Role d'ingénieur logiciel. (2024)",
+          projectDescription:
+            "Conception et mise en œuvre de mises en page, de formulaires et de composants interactifs réactifs à l'aide de la grille Angular 13, Typescript, SCSS et Synfusion pour l'intégration de tables dans le front-end. Traduire des exigences ambiguës en fonctionnalités fonctionnelles en travaillant en étroite collaboration avec les professionnels et les parties prenantes pour comprendre leurs besoins et en mettant en œuvre une logique métier et des flux de travail complexes au sein de l'application Angular. Utiliser npm (Node Package Manager) avec compétence dans les projets Angular pour gérer les dépendances, rationaliser les installations de packages et faciliter un échafaudage de projet efficace, garantissant des flux de travail de développement optimisés et des versions d'applications fiables. Utilisation compétente d'Azure DevOps pour un suivi méticuleux des tâches, l'identification et la résolution des bogues, garantissant des processus efficaces de correction des bogues et une gestion rationalisée des tâches pour des résultats de projet réussis.",
+        },
+      ],
+    },
     {
       title: "Quest Global",
       role: "Ingénieur logiciel senior",
@@ -459,10 +484,6 @@ export const FR = {
       percent: 80,
     },
     {
-      title: "Node",
-      percent: 70,
-    },
-    {
       title: "SQL",
       percent: 65,
     },
@@ -488,29 +509,30 @@ export const FR = {
   portfolio: [
     {
       title: "Portfolio",
-      description: "React 18, Tailwind CSS, JSX, hooks React et routeurs React",
+      description: "React, Tailwind CSS, JSX, React hooks and React Routers",
       url: "https://github.com/rohithvijay/Portfolio",
       img: personal,
     },
     {
       title: "Netflix GPT",
       description:
-        "React, JSX, tailwind CSS, base de données TMDB, hooks React, hooks React personnalisés, gestion de l'état Redux, routeurs React, authentification Firebase et API de récupération.",
+        "React, JSX, tailwind CSS, TMDB database, React hooks, Custom React hooks, Redux state management, React Routers, firebase authentication and fetch api.",
       url: "https://github.com/rohithvijay/Netflix-gpt",
       img: movieapp,
     },
     {
       title: "Food App",
       description:
-        "React, Bootstrap, JSX, React Routers, gestion de l'état Redux, récupération à l'aide de l'API Swiggy, de la bibliothèque Jest et de test de réaction.",
+        "React, Bootstrap and JSX, React Routers, Redux state management, fetch using Swiggy api, and Jest & react-testing library.",
       url: "https://github.com/rohithvijay/FoodApp",
       img: foodapp,
     },
     {
       title: "Memory Game",
-      description: "React 18, JSX, ReactRouter, React Hooks et Tailwind CSS.",
+      description:
+        "This is a memory test game created with React 18, ReactRouter, useContext and Tailwind CSS.",
       url: "https://github.com/rohithvijay/MemoryGame",
-      img: memoryapp,
+      img: memoryGame,
     },
   ],
   technologiesTitle: "LES TECHNOLOGIES",
@@ -553,8 +575,8 @@ export const FR = {
       icon: faGit,
     },
     {
-      title: "NODE",
-      icon: faNode,
+      title: "INVISION",
+      icon: faInvision,
     },
   ],
   contactTitle: "CONTACT",
