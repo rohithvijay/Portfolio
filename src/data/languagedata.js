@@ -303,9 +303,9 @@ export const EN = {
     phoneIcon: faPhone,
     phoneNumber: "+1 548 577 8889",
     addressIcon: faAddressCard,
-    street: "512 Glendene Cres",
-    city: "Waterloo",
-    province: "Ontario",
+    street: "89 Rue Claude Pitre",
+    city: "Montreal",
+    province: "Quebec",
   },
 };
 
@@ -589,8 +589,8 @@ export const FR = {
     phoneIcon: faPhone,
     phoneNumber: "+1 548 577 8889",
     addressIcon: faAddressCard,
-    street: "512 Glendene Cres",
-    city: "Waterloo",
-    province: "Ontario",
+    street: "89 Rue Claude Pitre",
+    city: "Montreal",
+    province: "Quebec",
   },
 };
