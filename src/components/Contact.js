@@ -44,7 +44,7 @@ const Contact = () => {
               {data.contact.mailAddress}
             </Link>
           </div>
-          <div className="flex items-center mb-7 text-gray-500 hover:text-gray-700">
+          {/* <div className="flex items-center mb-7 text-gray-500 hover:text-gray-700">
             <div className=" m-h-64 p-3 text-2xl">
               <FontAwesomeIcon icon={data.contact.addressIcon} />
             </div>
@@ -52,7 +52,7 @@ const Contact = () => {
               {data.contact.street},
               <br /> {data.contact.city}, {data.contact.province}
             </span>
-          </div>
+          </div> */}
           <div className="flex items-center mb-7 text-gray-500 hover:text-gray-700">
             <div className=" m-h-64 p-3 text-2xl">
               <FontAwesomeIcon icon={data.contact.phoneIcon} />
