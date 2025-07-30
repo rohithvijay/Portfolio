@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.eeaeaeed.css",
-    "main.js": "/Portfolio/static/js/main.64290757.js",
+    "main.js": "/Portfolio/static/js/main.b8989512.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/memory-game.png": "/Portfolio/static/media/memory-game.b5a347e2aad667a3a95c.png",
     "static/media/Appfabs.pdf": "/Portfolio/static/media/Appfabs.d1297a2363b2c0fce0b5.pdf",
@@ -10,17 +10,17 @@
     "static/media/Cycloides.pdf": "/Portfolio/static/media/Cycloides.1d8abb000270351aeea0.pdf",
     "static/media/food-app.png": "/Portfolio/static/media/food-app.c1a1ea0b1e0119f2d176.png",
     "static/media/personal.png": "/Portfolio/static/media/personal.64e04929fb069d6c4441.png",
-    "static/media/FrontEndDeveloper.pdf": "/Portfolio/static/media/FrontEndDeveloper.22202beaf434a1a5d01a.pdf",
+    "static/media/FrontEndDeveloper.pdf": "/Portfolio/static/media/FrontEndDeveloper.f912fd1aeaa77fb083eb.pdf",
     "static/media/profile-dp.jpg": "/Portfolio/static/media/profile-dp.9a1e9ed750735975ff54.jpg",
     "static/media/Reflections.pdf": "/Portfolio/static/media/Reflections.b26965c493312a60468d.pdf",
     "static/media/QuestGlobal.pdf": "/Portfolio/static/media/QuestGlobal.cb9a0252909db2ecfb25.pdf",
     "index.html": "/Portfolio/index.html",
     "main.eeaeaeed.css.map": "/Portfolio/static/css/main.eeaeaeed.css.map",
-    "main.64290757.js.map": "/Portfolio/static/js/main.64290757.js.map",
+    "main.b8989512.js.map": "/Portfolio/static/js/main.b8989512.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eeaeaeed.css",
-    "static/js/main.64290757.js"
+    "static/js/main.b8989512.js"
   ]
 }
